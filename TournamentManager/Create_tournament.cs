@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace TournamentManager
 {
-    public partial class Form1 : Form
+    public partial class CreateTournament : Form
     {
-        public Form1()
+        public CreateTournament()
         {
             InitializeComponent();
-
-
         }
     }
 }
