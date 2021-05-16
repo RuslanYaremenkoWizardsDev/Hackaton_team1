@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TournamentManager
 {
-    public partial class Tournament_manager : Form
+    public partial class TournamentManager : Form
     {
-        public Tournament_manager()
+        public TournamentManager()
         {
             InitializeComponent();
         }

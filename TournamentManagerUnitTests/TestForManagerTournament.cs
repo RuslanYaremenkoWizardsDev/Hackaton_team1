@@ -10,8 +10,8 @@ namespace TournamentManagerUnitTests
         {
         }
 
-        [Test]
-        public void GenerateFullMaleNameTest()
+        [TestCase()]
+        public void textBoxLoginTest()
         {
             
         }

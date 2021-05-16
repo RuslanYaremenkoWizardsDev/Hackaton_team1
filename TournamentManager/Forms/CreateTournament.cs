@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TournamentManager.Forms;
 using static TournamentManager.Logic.Tournament;
 
 namespace TournamentManager
@@ -123,6 +124,12 @@ namespace TournamentManager
                 DateStartTournament = DateStarttemp;
             }
           
+        }
+
+        private void addParticipant_Click(object sender, EventArgs e)
+        {
+            Participant participant = new Participant();
+            participant.ShowDialog();
         }
 
         private void GenerateName_Click(object sender, EventArgs e)

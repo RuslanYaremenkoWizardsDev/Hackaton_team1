@@ -35,6 +35,8 @@ namespace TournamentManager
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.LoginAuthorization = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
+            this.labelErrorLogin = new System.Windows.Forms.Label();
+            this.labelErrorPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelLogin
@@ -93,11 +95,29 @@ namespace TournamentManager
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
+            // labelErrorLogin
+            // 
+            this.labelErrorLogin.AutoSize = true;
+            this.labelErrorLogin.Location = new System.Drawing.Point(344, 102);
+            this.labelErrorLogin.Name = "labelErrorLogin";
+            this.labelErrorLogin.Size = new System.Drawing.Size(0, 13);
+            this.labelErrorLogin.TabIndex = 6;
+            // 
+            // labelErrorPassword
+            // 
+            this.labelErrorPassword.AutoSize = true;
+            this.labelErrorPassword.Location = new System.Drawing.Point(345, 152);
+            this.labelErrorPassword.Name = "labelErrorPassword";
+            this.labelErrorPassword.Size = new System.Drawing.Size(0, 13);
+            this.labelErrorPassword.TabIndex = 7;
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelErrorPassword);
+            this.Controls.Add(this.labelErrorLogin);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.LoginAuthorization);
             this.Controls.Add(this.textBoxPassword);
@@ -119,5 +139,7 @@ namespace TournamentManager
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button LoginAuthorization;
         private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Label labelErrorLogin;
+        private System.Windows.Forms.Label labelErrorPassword;
     }
 }

@@ -55,6 +55,7 @@ namespace TournamentManager
             this.labelErrorCount = new System.Windows.Forms.Label();
             this.labelPlace = new System.Windows.Forms.Label();
             this.labelErrorDateStart = new System.Windows.Forms.Label();
+            this.addParticipant = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxCounPlayer
@@ -287,11 +288,22 @@ namespace TournamentManager
             this.labelErrorDateStart.Size = new System.Drawing.Size(0, 13);
             this.labelErrorDateStart.TabIndex = 32;
             // 
+            // addParticipant
+            // 
+            this.addParticipant.Location = new System.Drawing.Point(53, 446);
+            this.addParticipant.Name = "addParticipant";
+            this.addParticipant.Size = new System.Drawing.Size(106, 23);
+            this.addParticipant.TabIndex = 33;
+            this.addParticipant.Text = "Add Participant:";
+            this.addParticipant.UseVisualStyleBackColor = true;
+            this.addParticipant.Click += new System.EventHandler(this.addParticipant_Click);
+            // 
             // CreateTournament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 491);
+            this.Controls.Add(this.addParticipant);
             this.Controls.Add(this.labelErrorDateStart);
             this.Controls.Add(this.labelPlace);
             this.Controls.Add(this.labelErrorCount);
@@ -354,5 +366,6 @@ namespace TournamentManager
         private System.Windows.Forms.Label labelErrorCount;
         private System.Windows.Forms.Label labelPlace;
         private System.Windows.Forms.Label labelErrorDateStart;
+        private System.Windows.Forms.Button addParticipant;
     }
 }

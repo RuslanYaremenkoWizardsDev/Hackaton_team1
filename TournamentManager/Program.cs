@@ -17,7 +17,7 @@ namespace TournamentManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TournamentPage());
+            Application.Run(new Welcome());
         }
     }
 }

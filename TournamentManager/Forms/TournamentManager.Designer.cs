@@ -1,7 +1,7 @@
 ﻿
 namespace TournamentManager
 {
-    partial class Tournament_manager
+    partial class TournamentManager
     {
         /// <summary>
         /// Required designer variable.
