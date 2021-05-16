@@ -50,6 +50,7 @@ namespace TournamentManager
             this.Pagination = new System.Windows.Forms.Button();
             this.LeftPageReturn = new System.Windows.Forms.Button();
             this.buttonRightPageForward = new System.Windows.Forms.Button();
+            this.Username = new System.Windows.Forms.Button();
             this.menuStripTournamentPage.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,7 +148,7 @@ namespace TournamentManager
             // themeView
             // 
             this.themeView.Name = "themeView";
-            this.themeView.Size = new System.Drawing.Size(206, 40);
+            this.themeView.Size = new System.Drawing.Size(173, 40);
             this.themeView.Text = "Theme";
             // 
             // contextMenuStrip1
@@ -226,12 +227,22 @@ namespace TournamentManager
             this.buttonRightPageForward.TabIndex = 7;
             this.buttonRightPageForward.UseVisualStyleBackColor = true;
             // 
+            // Username
+            // 
+            this.Username.Location = new System.Drawing.Point(1756, 58);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(119, 46);
+            this.Username.TabIndex = 8;
+            this.Username.UseVisualStyleBackColor = true;
+            this.Username.Click += new System.EventHandler(this.Username_Click);
+            // 
             // TournamentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.buttonRightPageForward);
             this.Controls.Add(this.LeftPageReturn);
             this.Controls.Add(this.Pagination);
@@ -270,6 +281,7 @@ namespace TournamentManager
         private System.Windows.Forms.Button Pagination;
         private System.Windows.Forms.Button LeftPageReturn;
         private System.Windows.Forms.Button buttonRightPageForward;
+        private System.Windows.Forms.Button Username;
     }
 }
 

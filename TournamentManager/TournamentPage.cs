@@ -72,6 +72,11 @@ namespace TournamentManager
         {
 
         }
-      
+
+        private void Username_Click(object sender, EventArgs e)
+        {
+            Account account = new Account();
+            account.ShowDialog();
+        }
     }
 }
