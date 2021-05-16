@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AbstactTournament.cs" />
     <Compile Include="Championship.cs" />
+    <Compile Include="Bugfix.cs" />
     <Compile Include="Cup.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
