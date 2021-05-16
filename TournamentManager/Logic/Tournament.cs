@@ -8,5 +8,6 @@ namespace TournamentManager.Logic
 {
     public abstract class Tournament
     {
+        public void Crashtest() { }
     }
 }
