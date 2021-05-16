@@ -1,7 +1,7 @@
 ﻿
 namespace TournamentManager
 {
-    partial class editResult
+    partial class EditResult
     {
         /// <summary>
         /// Required designer variable.
@@ -44,18 +44,18 @@ namespace TournamentManager
             this.teamOne.AutoSize = true;
             this.teamOne.Location = new System.Drawing.Point(83, 55);
             this.teamOne.Name = "teamOne";
-            this.teamOne.Size = new System.Drawing.Size(55, 13);
+            this.teamOne.Size = new System.Drawing.Size(52, 13);
             this.teamOne.TabIndex = 0;
-            this.teamOne.Text = "Team one";
+            this.teamOne.Text = "First team";
             // 
             // teamSecond
             // 
             this.teamSecond.AutoSize = true;
             this.teamSecond.Location = new System.Drawing.Point(192, 55);
             this.teamSecond.Name = "teamSecond";
-            this.teamSecond.Size = new System.Drawing.Size(72, 13);
+            this.teamSecond.Size = new System.Drawing.Size(73, 13);
             this.teamSecond.TabIndex = 1;
-            this.teamSecond.Text = "Team second";
+            this.teamSecond.Text = "Second team ";
             // 
             // enteResult
             // 
@@ -73,6 +73,7 @@ namespace TournamentManager
             this.comboTeamOne.Name = "comboTeamOne";
             this.comboTeamOne.Size = new System.Drawing.Size(121, 21);
             this.comboTeamOne.TabIndex = 3;
+            this.comboTeamOne.SelectedIndexChanged += new System.EventHandler(this.comboTeamOne_SelectedIndexChanged);
             // 
             // comboteamSecond
             // 
@@ -81,6 +82,7 @@ namespace TournamentManager
             this.comboteamSecond.Name = "comboteamSecond";
             this.comboteamSecond.Size = new System.Drawing.Size(121, 21);
             this.comboteamSecond.TabIndex = 4;
+            this.comboteamSecond.SelectedIndexChanged += new System.EventHandler(this.comboteamSecond_SelectedIndexChanged);
             // 
             // textBoxEnteResult
             // 
@@ -88,6 +90,7 @@ namespace TournamentManager
             this.textBoxEnteResult.Name = "textBoxEnteResult";
             this.textBoxEnteResult.Size = new System.Drawing.Size(100, 20);
             this.textBoxEnteResult.TabIndex = 5;
+            this.textBoxEnteResult.TextChanged += new System.EventHandler(this.textBoxEnteResult_TextChanged);
             // 
             // saveResult
             // 
@@ -97,6 +100,7 @@ namespace TournamentManager
             this.saveResult.TabIndex = 18;
             this.saveResult.Text = "Save";
             this.saveResult.UseVisualStyleBackColor = true;
+            this.saveResult.Click += new System.EventHandler(this.saveResult_Click);
             // 
             // cancelResult
             // 
@@ -106,8 +110,9 @@ namespace TournamentManager
             this.cancelResult.TabIndex = 17;
             this.cancelResult.Text = "Cancel";
             this.cancelResult.UseVisualStyleBackColor = true;
+            this.cancelResult.Click += new System.EventHandler(this.cancelResult_Click);
             // 
-            // editResult
+            // EditResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +125,7 @@ namespace TournamentManager
             this.Controls.Add(this.enteResult);
             this.Controls.Add(this.teamSecond);
             this.Controls.Add(this.teamOne);
-            this.Name = "editResult";
+            this.Name = "EditResult";
             this.Text = "Edit result";
             this.ResumeLayout(false);
             this.PerformLayout();

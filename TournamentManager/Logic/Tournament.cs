@@ -8,6 +8,50 @@ namespace TournamentManager.Logic
 {
     public abstract class Tournament
     {
-        public void Crashtest() { }
+        public string Name { get; set; }
+        public string Descripsion { get; set; }
+        public string Location { get; set; }
+        public DateTime DateEndRegistration { get; set; }
+        public DateTime DateStartTournament { get; set; }
+        public string TournamentLevel { get; set; }
+        public uint CountParticipants { get; set; }
+
+        public enum Level
+        {
+            Begginer,
+            Middle,
+            Advanced
+        }
+
+        public void CreateVisualisation() 
+        {
+          
+        }
+
+        public void AddParticipant()
+        {
+
+        }
+
+        public void RemoveParticipant()
+        {
+
+        }
+
+        public void ReplaceParticipant()
+        {
+
+        }
+
+        public void SwapParticipants()
+        {
+
+        }
+
+        public void SetScore()
+        {
+
+        }
+
     }
 }

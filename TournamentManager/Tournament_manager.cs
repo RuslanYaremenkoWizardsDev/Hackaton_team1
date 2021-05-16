@@ -16,5 +16,12 @@ namespace TournamentManager
         {
             InitializeComponent();
         }
+
+
+        private void EditResult(object sender, EventArgs e)
+        {
+            EditResult editresult = new EditResult();
+            editresult.ShowDialog();
+        }
     }
 }

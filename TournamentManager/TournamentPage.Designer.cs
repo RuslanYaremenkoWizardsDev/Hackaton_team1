@@ -33,22 +33,22 @@ namespace TournamentManager
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TournamentPage));
             this.menuStripTournamentPage = new System.Windows.Forms.MenuStrip();
             this.StripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.open = new System.Windows.Forms.ToolStripMenuItem();
+            this.save = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuItemEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuItemView = new System.Windows.Forms.ToolStripMenuItem();
-            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.themeView = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Search = new System.Windows.Forms.Button();
             this.TableFromTournamentPage = new System.Windows.Forms.TableLayoutPanel();
             this.AddTour = new System.Windows.Forms.Button();
-            this.buttonPagination = new System.Windows.Forms.Button();
-            this.buttonLeftPageReturn = new System.Windows.Forms.Button();
+            this.Pagination = new System.Windows.Forms.Button();
+            this.LeftPageReturn = new System.Windows.Forms.Button();
             this.buttonRightPageForward = new System.Windows.Forms.Button();
             this.menuStripTournamentPage.SuspendLayout();
             this.SuspendLayout();
@@ -56,95 +56,103 @@ namespace TournamentManager
             // menuStripTournamentPage
             // 
             this.menuStripTournamentPage.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStripTournamentPage.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStripTournamentPage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StripMenuItemFile,
             this.StripMenuItemEdit,
             this.StripMenuItemView});
             this.menuStripTournamentPage.Location = new System.Drawing.Point(0, 0);
             this.menuStripTournamentPage.Name = "menuStripTournamentPage";
-            this.menuStripTournamentPage.Size = new System.Drawing.Size(1904, 38);
+            this.menuStripTournamentPage.Size = new System.Drawing.Size(1904, 43);
             this.menuStripTournamentPage.TabIndex = 0;
             this.menuStripTournamentPage.Text = "menuStripFromTornPage";
             // 
             // StripMenuItemFile
             // 
             this.StripMenuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.saveToolStripMenuItem});
+            this.newFile,
+            this.open,
+            this.save});
             this.StripMenuItemFile.Name = "StripMenuItemFile";
-            this.StripMenuItemFile.Size = new System.Drawing.Size(56, 34);
+            this.StripMenuItemFile.Size = new System.Drawing.Size(66, 39);
             this.StripMenuItemFile.Text = "File";
             // 
-            // newToolStripMenuItem
+            // newFile
             // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.newToolStripMenuItem.Text = "New";
+            this.newFile.Name = "newFile";
+            this.newFile.Size = new System.Drawing.Size(159, 40);
+            this.newFile.Text = "New";
+            this.newFile.Click += new System.EventHandler(this.newFile_Click);
             // 
-            // openToolStripMenuItem
+            // open
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.openToolStripMenuItem.Text = "Open";
+            this.open.Name = "open";
+            this.open.Size = new System.Drawing.Size(159, 40);
+            this.open.Text = "Open";
+            this.open.Click += new System.EventHandler(this.openFile_Click);
             // 
-            // saveToolStripMenuItem
+            // save
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(159, 40);
+            this.save.Text = "Save";
+            this.save.Click += new System.EventHandler(this.saveFile);
             // 
             // StripMenuItemEdit
             // 
             this.StripMenuItemEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createToolStripMenuItem,
-            this.modifyToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.manageToolStripMenuItem});
+            this.createEdit,
+            this.modifyEdit,
+            this.deleteEdit,
+            this.manageEdit});
             this.StripMenuItemEdit.Name = "StripMenuItemEdit";
-            this.StripMenuItemEdit.Size = new System.Drawing.Size(60, 34);
+            this.StripMenuItemEdit.Size = new System.Drawing.Size(71, 39);
             this.StripMenuItemEdit.Text = "Edit";
             // 
-            // createToolStripMenuItem
+            // createEdit
             // 
-            this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.createToolStripMenuItem.Text = "Create";
+            this.createEdit.Name = "createEdit";
+            this.createEdit.Size = new System.Drawing.Size(188, 40);
+            this.createEdit.Text = "Create";
+            this.createEdit.Click += new System.EventHandler(this.createEdit_Click);
             // 
-            // modifyToolStripMenuItem
+            // modifyEdit
             // 
-            this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.modifyToolStripMenuItem.Text = "Modify";
+            this.modifyEdit.Name = "modifyEdit";
+            this.modifyEdit.Size = new System.Drawing.Size(188, 40);
+            this.modifyEdit.Text = "Modify";
+            this.modifyEdit.Click += new System.EventHandler(this.modifyEdit_Click);
             // 
-            // deleteToolStripMenuItem
+            // deleteEdit
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteEdit.Name = "deleteEdit";
+            this.deleteEdit.Size = new System.Drawing.Size(188, 40);
+            this.deleteEdit.Text = "Delete";
+            this.deleteEdit.Click += new System.EventHandler(this.deleteEdit_Click);
             // 
-            // manageToolStripMenuItem
+            // manageEdit
             // 
-            this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.manageToolStripMenuItem.Text = "Manage";
+            this.manageEdit.Name = "manageEdit";
+            this.manageEdit.Size = new System.Drawing.Size(188, 40);
+            this.manageEdit.Text = "Manage";
             // 
             // StripMenuItemView
             // 
             this.StripMenuItemView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.themeToolStripMenuItem});
+            this.themeView});
             this.StripMenuItemView.Name = "StripMenuItemView";
-            this.StripMenuItemView.Size = new System.Drawing.Size(69, 34);
+            this.StripMenuItemView.Size = new System.Drawing.Size(82, 39);
             this.StripMenuItemView.Text = "View";
             // 
-            // themeToolStripMenuItem
+            // themeView
             // 
-            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
-            this.themeToolStripMenuItem.Text = "Theme";
+            this.themeView.Name = "themeView";
+            this.themeView.Size = new System.Drawing.Size(206, 40);
+            this.themeView.Text = "Theme";
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
@@ -183,28 +191,29 @@ namespace TournamentManager
             this.AddTour.Name = "AddTour";
             this.AddTour.Size = new System.Drawing.Size(150, 45);
             this.AddTour.TabIndex = 4;
-            this.AddTour.Text = "Add Tour";
+            this.AddTour.Text = "Add Tournament";
             this.AddTour.UseVisualStyleBackColor = true;
+            this.AddTour.Click += new System.EventHandler(this.Create_tournament);
             // 
-            // buttonPagination
+            // Pagination
             // 
-            this.buttonPagination.Location = new System.Drawing.Point(934, 937);
-            this.buttonPagination.Name = "buttonPagination";
-            this.buttonPagination.Size = new System.Drawing.Size(35, 39);
-            this.buttonPagination.TabIndex = 5;
-            this.buttonPagination.Text = "1";
-            this.buttonPagination.UseVisualStyleBackColor = true;
+            this.Pagination.Location = new System.Drawing.Point(934, 937);
+            this.Pagination.Name = "Pagination";
+            this.Pagination.Size = new System.Drawing.Size(35, 39);
+            this.Pagination.TabIndex = 5;
+            this.Pagination.Text = "1";
+            this.Pagination.UseVisualStyleBackColor = true;
             // 
-            // buttonLeftPageReturn
+            // LeftPageReturn
             // 
-            this.buttonLeftPageReturn.FlatAppearance.BorderSize = 0;
-            this.buttonLeftPageReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLeftPageReturn.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeftPageReturn.Image")));
-            this.buttonLeftPageReturn.Location = new System.Drawing.Point(893, 937);
-            this.buttonLeftPageReturn.Name = "buttonLeftPageReturn";
-            this.buttonLeftPageReturn.Size = new System.Drawing.Size(35, 39);
-            this.buttonLeftPageReturn.TabIndex = 6;
-            this.buttonLeftPageReturn.UseVisualStyleBackColor = true;
+            this.LeftPageReturn.FlatAppearance.BorderSize = 0;
+            this.LeftPageReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LeftPageReturn.Image = ((System.Drawing.Image)(resources.GetObject("LeftPageReturn.Image")));
+            this.LeftPageReturn.Location = new System.Drawing.Point(893, 937);
+            this.LeftPageReturn.Name = "LeftPageReturn";
+            this.LeftPageReturn.Size = new System.Drawing.Size(35, 39);
+            this.LeftPageReturn.TabIndex = 6;
+            this.LeftPageReturn.UseVisualStyleBackColor = true;
             // 
             // buttonRightPageForward
             // 
@@ -224,8 +233,8 @@ namespace TournamentManager
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.buttonRightPageForward);
-            this.Controls.Add(this.buttonLeftPageReturn);
-            this.Controls.Add(this.buttonPagination);
+            this.Controls.Add(this.LeftPageReturn);
+            this.Controls.Add(this.Pagination);
             this.Controls.Add(this.AddTour);
             this.Controls.Add(this.TableFromTournamentPage);
             this.Controls.Add(this.Search);
@@ -244,22 +253,22 @@ namespace TournamentManager
 
         private System.Windows.Forms.MenuStrip menuStripTournamentPage;
         private System.Windows.Forms.ToolStripMenuItem StripMenuItemFile;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newFile;
+        private System.Windows.Forms.ToolStripMenuItem open;
+        private System.Windows.Forms.ToolStripMenuItem save;
         private System.Windows.Forms.ToolStripMenuItem StripMenuItemEdit;
-        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createEdit;
+        private System.Windows.Forms.ToolStripMenuItem modifyEdit;
+        private System.Windows.Forms.ToolStripMenuItem deleteEdit;
+        private System.Windows.Forms.ToolStripMenuItem manageEdit;
         private System.Windows.Forms.ToolStripMenuItem StripMenuItemView;
-        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem themeView;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.TableLayoutPanel TableFromTournamentPage;
         private System.Windows.Forms.Button AddTour;
-        private System.Windows.Forms.Button buttonPagination;
-        private System.Windows.Forms.Button buttonLeftPageReturn;
+        private System.Windows.Forms.Button Pagination;
+        private System.Windows.Forms.Button LeftPageReturn;
         private System.Windows.Forms.Button buttonRightPageForward;
     }
 }
