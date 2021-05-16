@@ -56,13 +56,14 @@ namespace TournamentManager
             // menuStripTournamentPage
             // 
             this.menuStripTournamentPage.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStripTournamentPage.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStripTournamentPage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StripMenuItemFile,
             this.StripMenuItemEdit,
             this.StripMenuItemView});
             this.menuStripTournamentPage.Location = new System.Drawing.Point(0, 0);
             this.menuStripTournamentPage.Name = "menuStripTournamentPage";
-            this.menuStripTournamentPage.Size = new System.Drawing.Size(1904, 38);
+            this.menuStripTournamentPage.Size = new System.Drawing.Size(1904, 43);
             this.menuStripTournamentPage.TabIndex = 0;
             this.menuStripTournamentPage.Text = "menuStripFromTornPage";
             // 
@@ -73,25 +74,25 @@ namespace TournamentManager
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.StripMenuItemFile.Name = "StripMenuItemFile";
-            this.StripMenuItemFile.Size = new System.Drawing.Size(56, 34);
+            this.StripMenuItemFile.Size = new System.Drawing.Size(66, 39);
             this.StripMenuItemFile.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(159, 40);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(159, 40);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(159, 40);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // StripMenuItemEdit
@@ -102,31 +103,31 @@ namespace TournamentManager
             this.deleteToolStripMenuItem,
             this.manageToolStripMenuItem});
             this.StripMenuItemEdit.Name = "StripMenuItemEdit";
-            this.StripMenuItemEdit.Size = new System.Drawing.Size(60, 34);
+            this.StripMenuItemEdit.Size = new System.Drawing.Size(71, 39);
             this.StripMenuItemEdit.Text = "Edit";
             // 
             // createToolStripMenuItem
             // 
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(188, 40);
             this.createToolStripMenuItem.Text = "Create";
             // 
             // modifyToolStripMenuItem
             // 
             this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(188, 40);
             this.modifyToolStripMenuItem.Text = "Modify";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(188, 40);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // manageToolStripMenuItem
             // 
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(188, 40);
             this.manageToolStripMenuItem.Text = "Manage";
             // 
             // StripMenuItemView
@@ -134,17 +135,18 @@ namespace TournamentManager
             this.StripMenuItemView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themeToolStripMenuItem});
             this.StripMenuItemView.Name = "StripMenuItemView";
-            this.StripMenuItemView.Size = new System.Drawing.Size(69, 34);
+            this.StripMenuItemView.Size = new System.Drawing.Size(82, 39);
             this.StripMenuItemView.Text = "View";
             // 
             // themeToolStripMenuItem
             // 
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(173, 40);
             this.themeToolStripMenuItem.Text = "Theme";
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
@@ -159,6 +161,7 @@ namespace TournamentManager
             // 
             // TableFromTournamentPage
             // 
+            this.TableFromTournamentPage.BackColor = System.Drawing.Color.Silver;
             this.TableFromTournamentPage.ColumnCount = 9;
             this.TableFromTournamentPage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableFromTournamentPage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));

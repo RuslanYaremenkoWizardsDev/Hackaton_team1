@@ -47,7 +47,7 @@ namespace TournamentManager
             // 
             // Edit_result
             // 
-            this.Edit_result.Location = new System.Drawing.Point(905, 252);
+            this.Edit_result.Location = new System.Drawing.Point(340, 245);
             this.Edit_result.Name = "Edit_result";
             this.Edit_result.Size = new System.Drawing.Size(150, 45);
             this.Edit_result.TabIndex = 1;
@@ -57,9 +57,9 @@ namespace TournamentManager
             // cupGrid
             // 
             this.cupGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cupGrid.Location = new System.Drawing.Point(0, 594);
+            this.cupGrid.Location = new System.Drawing.Point(0, 331);
             this.cupGrid.Name = "cupGrid";
-            this.cupGrid.Size = new System.Drawing.Size(1904, 447);
+            this.cupGrid.Size = new System.Drawing.Size(1248, 447);
             this.cupGrid.TabIndex = 2;
             this.cupGrid.TabStop = false;
             // 
@@ -67,7 +67,7 @@ namespace TournamentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1248, 778);
             this.Controls.Add(this.cupGrid);
             this.Controls.Add(this.Edit_result);
             this.Controls.Add(this.dataGridResaltTour);
