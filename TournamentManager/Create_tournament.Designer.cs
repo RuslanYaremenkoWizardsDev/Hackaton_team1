@@ -50,14 +50,14 @@ namespace TournamentManager
             // 
             // textBoxCounPlayer
             // 
-            this.textBoxCounPlayer.Location = new System.Drawing.Point(144, 95);
+            this.textBoxCounPlayer.Location = new System.Drawing.Point(165, 86);
             this.textBoxCounPlayer.Name = "textBoxCounPlayer";
             this.textBoxCounPlayer.Size = new System.Drawing.Size(100, 20);
             this.textBoxCounPlayer.TabIndex = 1;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(144, 59);
+            this.textBoxName.Location = new System.Drawing.Point(165, 50);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace TournamentManager
             // nemeTournament
             // 
             this.nemeTournament.AutoSize = true;
-            this.nemeTournament.Location = new System.Drawing.Point(21, 66);
+            this.nemeTournament.Location = new System.Drawing.Point(42, 57);
             this.nemeTournament.Name = "nemeTournament";
             this.nemeTournament.Size = new System.Drawing.Size(38, 13);
             this.nemeTournament.TabIndex = 7;
@@ -74,16 +74,16 @@ namespace TournamentManager
             // playerСount
             // 
             this.playerСount.AutoSize = true;
-            this.playerСount.Location = new System.Drawing.Point(21, 102);
+            this.playerСount.Location = new System.Drawing.Point(42, 93);
             this.playerСount.Name = "playerСount";
-            this.playerСount.Size = new System.Drawing.Size(80, 13);
+            this.playerСount.Size = new System.Drawing.Size(83, 13);
             this.playerСount.TabIndex = 8;
-            this.playerСount.Text = "Сount  player(s)";
+            this.playerСount.Text = "Сount  player(s):";
             // 
             // type
             // 
             this.type.AutoSize = true;
-            this.type.Location = new System.Drawing.Point(21, 171);
+            this.type.Location = new System.Drawing.Point(42, 162);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(34, 13);
             this.type.TabIndex = 9;
@@ -92,7 +92,7 @@ namespace TournamentManager
             // registrationEndDate
             // 
             this.registrationEndDate.AutoSize = true;
-            this.registrationEndDate.Location = new System.Drawing.Point(21, 239);
+            this.registrationEndDate.Location = new System.Drawing.Point(42, 230);
             this.registrationEndDate.Name = "registrationEndDate";
             this.registrationEndDate.Size = new System.Drawing.Size(111, 13);
             this.registrationEndDate.TabIndex = 11;
@@ -101,7 +101,7 @@ namespace TournamentManager
             // level
             // 
             this.level.AutoSize = true;
-            this.level.Location = new System.Drawing.Point(21, 205);
+            this.level.Location = new System.Drawing.Point(42, 196);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(36, 13);
             this.level.TabIndex = 10;
@@ -110,7 +110,7 @@ namespace TournamentManager
             // tournamentStartDate
             // 
             this.tournamentStartDate.AutoSize = true;
-            this.tournamentStartDate.Location = new System.Drawing.Point(21, 275);
+            this.tournamentStartDate.Location = new System.Drawing.Point(42, 266);
             this.tournamentStartDate.Name = "tournamentStartDate";
             this.tournamentStartDate.Size = new System.Drawing.Size(114, 13);
             this.tournamentStartDate.TabIndex = 13;
@@ -118,27 +118,27 @@ namespace TournamentManager
             // 
             // addPlayer
             // 
-            this.addPlayer.Location = new System.Drawing.Point(12, 449);
+            this.addPlayer.Location = new System.Drawing.Point(45, 438);
             this.addPlayer.Name = "addPlayer";
-            this.addPlayer.Size = new System.Drawing.Size(75, 23);
+            this.addPlayer.Size = new System.Drawing.Size(75, 25);
             this.addPlayer.TabIndex = 14;
             this.addPlayer.Text = "Add player";
             this.addPlayer.UseVisualStyleBackColor = true;
             // 
             // cancelTournament
             // 
-            this.cancelTournament.Location = new System.Drawing.Point(371, 449);
+            this.cancelTournament.Location = new System.Drawing.Point(318, 438);
             this.cancelTournament.Name = "cancelTournament";
-            this.cancelTournament.Size = new System.Drawing.Size(75, 23);
+            this.cancelTournament.Size = new System.Drawing.Size(75, 25);
             this.cancelTournament.TabIndex = 15;
             this.cancelTournament.Text = "Cancel";
             this.cancelTournament.UseVisualStyleBackColor = true;
             // 
             // saveTournament
             // 
-            this.saveTournament.Location = new System.Drawing.Point(290, 449);
+            this.saveTournament.Location = new System.Drawing.Point(237, 438);
             this.saveTournament.Name = "saveTournament";
-            this.saveTournament.Size = new System.Drawing.Size(75, 23);
+            this.saveTournament.Size = new System.Drawing.Size(75, 25);
             this.saveTournament.TabIndex = 16;
             this.saveTournament.Text = "Save";
             this.saveTournament.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@ namespace TournamentManager
             // place
             // 
             this.place.AutoSize = true;
-            this.place.Location = new System.Drawing.Point(21, 137);
+            this.place.Location = new System.Drawing.Point(42, 128);
             this.place.Name = "place";
             this.place.Size = new System.Drawing.Size(37, 13);
             this.place.TabIndex = 18;
@@ -154,7 +154,7 @@ namespace TournamentManager
             // 
             // textBoxPlace
             // 
-            this.textBoxPlace.Location = new System.Drawing.Point(144, 130);
+            this.textBoxPlace.Location = new System.Drawing.Point(165, 121);
             this.textBoxPlace.Name = "textBoxPlace";
             this.textBoxPlace.Size = new System.Drawing.Size(100, 20);
             this.textBoxPlace.TabIndex = 17;
@@ -162,7 +162,7 @@ namespace TournamentManager
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(144, 168);
+            this.comboBoxType.Location = new System.Drawing.Point(165, 159);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(100, 21);
             this.comboBoxType.TabIndex = 19;
@@ -170,21 +170,21 @@ namespace TournamentManager
             // comboBoxLevel
             // 
             this.comboBoxLevel.FormattingEnabled = true;
-            this.comboBoxLevel.Location = new System.Drawing.Point(144, 197);
+            this.comboBoxLevel.Location = new System.Drawing.Point(165, 188);
             this.comboBoxLevel.Name = "comboBoxLevel";
             this.comboBoxLevel.Size = new System.Drawing.Size(100, 21);
             this.comboBoxLevel.TabIndex = 20;
             // 
             // dateTimeEndRegistration
             // 
-            this.dateTimeEndRegistration.Location = new System.Drawing.Point(144, 233);
+            this.dateTimeEndRegistration.Location = new System.Drawing.Point(165, 224);
             this.dateTimeEndRegistration.Name = "dateTimeEndRegistration";
             this.dateTimeEndRegistration.Size = new System.Drawing.Size(112, 20);
             this.dateTimeEndRegistration.TabIndex = 21;
             // 
             // dateTimeStartTourn
             // 
-            this.dateTimeStartTourn.Location = new System.Drawing.Point(144, 269);
+            this.dateTimeStartTourn.Location = new System.Drawing.Point(165, 260);
             this.dateTimeStartTourn.Name = "dateTimeStartTourn";
             this.dateTimeStartTourn.Size = new System.Drawing.Size(112, 20);
             this.dateTimeStartTourn.TabIndex = 22;
@@ -193,7 +193,7 @@ namespace TournamentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 484);
+            this.ClientSize = new System.Drawing.Size(464, 491);
             this.Controls.Add(this.dateTimeStartTourn);
             this.Controls.Add(this.dateTimeEndRegistration);
             this.Controls.Add(this.comboBoxLevel);

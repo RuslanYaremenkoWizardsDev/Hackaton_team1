@@ -39,17 +39,17 @@ namespace TournamentManager
             // dataGridResaltTour
             // 
             this.dataGridResaltTour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridResaltTour.Location = new System.Drawing.Point(10, 20);
+            this.dataGridResaltTour.Location = new System.Drawing.Point(0, 0);
             this.dataGridResaltTour.Name = "dataGridResaltTour";
             this.dataGridResaltTour.RowHeadersWidth = 47;
-            this.dataGridResaltTour.Size = new System.Drawing.Size(776, 175);
+            this.dataGridResaltTour.Size = new System.Drawing.Size(1904, 175);
             this.dataGridResaltTour.TabIndex = 0;
             // 
             // Edit_result
             // 
-            this.Edit_result.Location = new System.Drawing.Point(670, 232);
+            this.Edit_result.Location = new System.Drawing.Point(905, 252);
             this.Edit_result.Name = "Edit_result";
-            this.Edit_result.Size = new System.Drawing.Size(118, 44);
+            this.Edit_result.Size = new System.Drawing.Size(150, 45);
             this.Edit_result.TabIndex = 1;
             this.Edit_result.Text = "Edit Result";
             this.Edit_result.UseVisualStyleBackColor = true;
@@ -57,9 +57,9 @@ namespace TournamentManager
             // cupGrid
             // 
             this.cupGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cupGrid.Location = new System.Drawing.Point(0, 335);
+            this.cupGrid.Location = new System.Drawing.Point(0, 594);
             this.cupGrid.Name = "cupGrid";
-            this.cupGrid.Size = new System.Drawing.Size(807, 320);
+            this.cupGrid.Size = new System.Drawing.Size(1904, 447);
             this.cupGrid.TabIndex = 2;
             this.cupGrid.TabStop = false;
             // 
@@ -67,7 +67,7 @@ namespace TournamentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 655);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.cupGrid);
             this.Controls.Add(this.Edit_result);
             this.Controls.Add(this.dataGridResaltTour);
