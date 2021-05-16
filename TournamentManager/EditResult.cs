@@ -10,11 +10,36 @@ using System.Windows.Forms;
 
 namespace TournamentManager
 {
-    public partial class editResult : Form
+    public partial class EditResult : Form
     {
-        public editResult()
+        public EditResult()
         {
             InitializeComponent();
+        }
+
+        private void saveResult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboTeamOne_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboteamSecond_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEnteResult_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelResult_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
