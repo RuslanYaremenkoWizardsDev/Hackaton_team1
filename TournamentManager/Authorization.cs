@@ -16,5 +16,26 @@ namespace TournamentManager
         {
             InitializeComponent();
         }
+
+        private void textBoxLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void LoginAuthorization_Click(object sender, EventArgs e)
+        {
+            TournamentPage tournamentPage = new TournamentPage();
+            tournamentPage.ShowDialog();
+        }
     }
 }
