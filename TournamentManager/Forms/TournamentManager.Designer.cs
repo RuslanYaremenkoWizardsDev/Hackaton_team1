@@ -78,6 +78,7 @@ namespace TournamentManager
             this.Controls.Add(this.dataGridResaltTour);
             this.Name = "TournamentManager";
             this.Text = "Tournament manager";
+            this.Load += new System.EventHandler(this.Tournament_manager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridResaltTour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cupGrid)).EndInit();
             this.ResumeLayout(false);
