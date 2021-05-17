@@ -17,6 +17,7 @@ namespace TournamentManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new CreateTournament());
             Application.Run(new Tournament_manager());
         }
     }
