@@ -51,7 +51,26 @@ namespace TournamentManager
             this.LeftPageReturn = new System.Windows.Forms.Button();
             this.buttonRightPageForward = new System.Windows.Forms.Button();
             this.Username = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gameStartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registrationEndDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tournamentLavelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.participantsNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tournamentScenarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resultDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tournamentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tournamentManagerDataSet = new TournamentManager.TournamentManagerDataSet();
+            this.tournamentTableAdapter = new TournamentManager.TournamentManagerDataSetTableAdapters.TournamentTableAdapter();
+            this.buttonRefresh = new System.Windows.Forms.Button();
             this.menuStripTournamentPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tournamentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tournamentManagerDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripTournamentPage
@@ -236,12 +255,129 @@ namespace TournamentManager
             this.Username.UseVisualStyleBackColor = true;
             this.Username.Click += new System.EventHandler(this.Username_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.typeDataGridViewTextBoxColumn,
+            this.locationDataGridViewTextBoxColumn,
+            this.gameStartDataGridViewTextBoxColumn,
+            this.registrationEndDataGridViewTextBoxColumn,
+            this.tournamentLavelDataGridViewTextBoxColumn,
+            this.participantsNumberDataGridViewTextBoxColumn,
+            this.tournamentScenarioDataGridViewTextBoxColumn,
+            this.resultDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tournamentBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1144, 215);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "Location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "Location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            // 
+            // gameStartDataGridViewTextBoxColumn
+            // 
+            this.gameStartDataGridViewTextBoxColumn.DataPropertyName = "GameStart";
+            this.gameStartDataGridViewTextBoxColumn.HeaderText = "GameStart";
+            this.gameStartDataGridViewTextBoxColumn.Name = "gameStartDataGridViewTextBoxColumn";
+            // 
+            // registrationEndDataGridViewTextBoxColumn
+            // 
+            this.registrationEndDataGridViewTextBoxColumn.DataPropertyName = "RegistrationEnd";
+            this.registrationEndDataGridViewTextBoxColumn.HeaderText = "RegistrationEnd";
+            this.registrationEndDataGridViewTextBoxColumn.Name = "registrationEndDataGridViewTextBoxColumn";
+            // 
+            // tournamentLavelDataGridViewTextBoxColumn
+            // 
+            this.tournamentLavelDataGridViewTextBoxColumn.DataPropertyName = "TournamentLavel";
+            this.tournamentLavelDataGridViewTextBoxColumn.HeaderText = "TournamentLavel";
+            this.tournamentLavelDataGridViewTextBoxColumn.Name = "tournamentLavelDataGridViewTextBoxColumn";
+            // 
+            // participantsNumberDataGridViewTextBoxColumn
+            // 
+            this.participantsNumberDataGridViewTextBoxColumn.DataPropertyName = "ParticipantsNumber";
+            this.participantsNumberDataGridViewTextBoxColumn.HeaderText = "ParticipantsNumber";
+            this.participantsNumberDataGridViewTextBoxColumn.Name = "participantsNumberDataGridViewTextBoxColumn";
+            // 
+            // tournamentScenarioDataGridViewTextBoxColumn
+            // 
+            this.tournamentScenarioDataGridViewTextBoxColumn.DataPropertyName = "TournamentScenario";
+            this.tournamentScenarioDataGridViewTextBoxColumn.HeaderText = "TournamentScenario";
+            this.tournamentScenarioDataGridViewTextBoxColumn.Name = "tournamentScenarioDataGridViewTextBoxColumn";
+            // 
+            // resultDataGridViewTextBoxColumn
+            // 
+            this.resultDataGridViewTextBoxColumn.DataPropertyName = "Result";
+            this.resultDataGridViewTextBoxColumn.HeaderText = "Result";
+            this.resultDataGridViewTextBoxColumn.Name = "resultDataGridViewTextBoxColumn";
+            // 
+            // tournamentBindingSource
+            // 
+            this.tournamentBindingSource.DataMember = "Tournament";
+            this.tournamentBindingSource.DataSource = this.tournamentManagerDataSet;
+            // 
+            // tournamentManagerDataSet
+            // 
+            this.tournamentManagerDataSet.DataSetName = "TournamentManagerDataSet";
+            this.tournamentManagerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tournamentTableAdapter
+            // 
+            this.tournamentTableAdapter.ClearBeforeFill = true;
+            // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.Location = new System.Drawing.Point(1066, 290);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(89, 44);
+            this.buttonRefresh.TabIndex = 10;
+            this.buttonRefresh.Text = "Refresh";
+            this.buttonRefresh.UseVisualStyleBackColor = true;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
+            // 
             // TournamentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonRefresh);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.buttonRightPageForward);
             this.Controls.Add(this.LeftPageReturn);
@@ -255,6 +391,9 @@ namespace TournamentManager
             this.Text = "Tournament Page";
             this.menuStripTournamentPage.ResumeLayout(false);
             this.menuStripTournamentPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tournamentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tournamentManagerDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,6 +421,22 @@ namespace TournamentManager
         private System.Windows.Forms.Button LeftPageReturn;
         private System.Windows.Forms.Button buttonRightPageForward;
         private System.Windows.Forms.Button Username;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private TournamentManagerDataSet tournamentManagerDataSet;
+        private System.Windows.Forms.BindingSource tournamentBindingSource;
+        public TournamentManagerDataSetTableAdapters.TournamentTableAdapter tournamentTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gameStartDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn registrationEndDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tournamentLavelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn participantsNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tournamentScenarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resultDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button buttonRefresh;
     }
 }
 
