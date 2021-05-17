@@ -65,7 +65,8 @@ namespace TournamentManager
 
         private void manageEdit_Click(object sender, EventArgs e)
         {
-
+            Tournament_manager tournament_Manager = new Tournament_manager();
+            tournament_Manager.ShowDialog();
         }
 
         private void themeView_Click(object sender, EventArgs e)
@@ -95,5 +96,7 @@ namespace TournamentManager
             Account account = new Account();
             account.ShowDialog();
         }
+
+     
     }
 }

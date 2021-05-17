@@ -132,29 +132,30 @@ namespace TournamentManager
             // createEdit
             // 
             this.createEdit.Name = "createEdit";
-            this.createEdit.Size = new System.Drawing.Size(162, 34);
+            this.createEdit.Size = new System.Drawing.Size(180, 34);
             this.createEdit.Text = "Create";
             this.createEdit.Click += new System.EventHandler(this.createEdit_Click);
             // 
             // modifyEdit
             // 
             this.modifyEdit.Name = "modifyEdit";
-            this.modifyEdit.Size = new System.Drawing.Size(162, 34);
+            this.modifyEdit.Size = new System.Drawing.Size(180, 34);
             this.modifyEdit.Text = "Modify";
             this.modifyEdit.Click += new System.EventHandler(this.modifyEdit_Click);
             // 
             // deleteEdit
             // 
             this.deleteEdit.Name = "deleteEdit";
-            this.deleteEdit.Size = new System.Drawing.Size(162, 34);
+            this.deleteEdit.Size = new System.Drawing.Size(180, 34);
             this.deleteEdit.Text = "Delete";
             this.deleteEdit.Click += new System.EventHandler(this.deleteEdit_Click);
             // 
             // manageEdit
             // 
             this.manageEdit.Name = "manageEdit";
-            this.manageEdit.Size = new System.Drawing.Size(162, 34);
+            this.manageEdit.Size = new System.Drawing.Size(180, 34);
             this.manageEdit.Text = "Manage";
+            this.manageEdit.Click += new System.EventHandler(this.manageEdit_Click);
             // 
             // StripMenuItemView
             // 
