@@ -21,7 +21,6 @@ namespace TournamentManager.Logic
         {
             return RandomChooser(_citiesNames, _citiesNamesRate);
         }
-        
         public static string GenerateTeamName()
         {
             string adjective = GenerateAdjective();
@@ -35,14 +34,6 @@ namespace TournamentManager.Logic
             string ajective = RandomChooser(_toutnamentAjectives);
             return cityName + " " + ajective + " Cup";
         }
-        //public static string GenerateChampionshipName()
-        //{
-        //    string cityName = GenerateCityName();
-        //    string ajective = RandomChooser(_toutnamentAjectives);
-        //    return cityName + " " + ajective + " Championship";
-        //}
-        
-
         private static string GenerateAdjective()
         {
             return RandomChooser(_adjectives, _adjectivesRate);
@@ -51,7 +42,6 @@ namespace TournamentManager.Logic
         {
             return RandomChooser(_nouns, _nounsRate);
         }
-
         //Random Methods
         private static string RandomChooser(string[] data)
         {
@@ -59,37 +49,6 @@ namespace TournamentManager.Logic
             int itemPosition = random.Next(0, data.Length);
             return data[itemPosition];
         }
-        //private static string RandomChooser(string[] data, bool isRanked)
-        //{
-        //    if (!isRanked)
-        //    {
-        //        return RandomChooser(data);
-        //    }
-        //    else
-        //    {
-        //        double rankSum = 0.0;
-        //        for (int i = 0; i < data.Length; i++)
-        //        {
-        //            rankSum += 1.0 / (double)i;
-        //        }
-        //        Random random = new Random();
-        //        double rank = rankSum * random.NextDouble();
-        //        double currentSum = 0.0;
-        //        for (int i = 0; i < data.Length; i++)
-        //        {
-        //            currentSum += 1.0 / (double)i;
-        //            if (rank <= currentSum)
-        //            {
-        //                return data[i];
-        //            }
-        //            else
-        //            {
-        //                continue;
-        //            }
-        //        }
-        //        return data[data.Length - 1];
-        //    }
-        //}
         private static string RandomChooser(string[] data, int[] rate)
         {
             int rateSum = rate.Sum();
