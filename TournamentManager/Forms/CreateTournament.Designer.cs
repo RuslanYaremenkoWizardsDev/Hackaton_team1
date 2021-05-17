@@ -29,7 +29,7 @@ namespace TournamentManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxCounPlayer = new System.Windows.Forms.TextBox();
+            this.textBoxCountPlayer = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.nemeTournament = new System.Windows.Forms.Label();
             this.playerСount = new System.Windows.Forms.Label();
@@ -55,17 +55,17 @@ namespace TournamentManager
             this.labelPlace = new System.Windows.Forms.Label();
             this.labelErrorDateStart = new System.Windows.Forms.Label();
             this.addParticipant = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxScenario = new System.Windows.Forms.ComboBox();
             this.labelTournSc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBoxCounPlayer
+            // textBoxCountPlayer
             // 
-            this.textBoxCounPlayer.Location = new System.Drawing.Point(258, 136);
-            this.textBoxCounPlayer.Name = "textBoxCounPlayer";
-            this.textBoxCounPlayer.Size = new System.Drawing.Size(200, 20);
-            this.textBoxCounPlayer.TabIndex = 1;
-            this.textBoxCounPlayer.TextChanged += new System.EventHandler(this.textBoxCounPlayer_TextChanged);
+            this.textBoxCountPlayer.Location = new System.Drawing.Point(258, 136);
+            this.textBoxCountPlayer.Name = "textBoxCountPlayer";
+            this.textBoxCountPlayer.Size = new System.Drawing.Size(200, 20);
+            this.textBoxCountPlayer.TabIndex = 1;
+            this.textBoxCountPlayer.TextChanged += new System.EventHandler(this.textBoxCountPlayer_TextChanged);
             // 
             // textBoxName
             // 
@@ -82,7 +82,7 @@ namespace TournamentManager
             this.nemeTournament.ForeColor = System.Drawing.Color.Gold;
             this.nemeTournament.Location = new System.Drawing.Point(48, 43);
             this.nemeTournament.Name = "nemeTournament";
-            this.nemeTournament.Size = new System.Drawing.Size(57, 21);
+            this.nemeTournament.Size = new System.Drawing.Size(49, 19);
             this.nemeTournament.TabIndex = 7;
             this.nemeTournament.Text = "Name:";
             // 
@@ -93,7 +93,7 @@ namespace TournamentManager
             this.playerСount.ForeColor = System.Drawing.Color.Gold;
             this.playerСount.Location = new System.Drawing.Point(49, 136);
             this.playerСount.Name = "playerСount";
-            this.playerСount.Size = new System.Drawing.Size(128, 21);
+            this.playerСount.Size = new System.Drawing.Size(112, 19);
             this.playerСount.TabIndex = 8;
             this.playerСount.Text = "Сount  player(s):";
             // 
@@ -104,7 +104,7 @@ namespace TournamentManager
             this.type.ForeColor = System.Drawing.Color.Gold;
             this.type.Location = new System.Drawing.Point(54, 224);
             this.type.Name = "type";
-            this.type.Size = new System.Drawing.Size(49, 21);
+            this.type.Size = new System.Drawing.Size(42, 19);
             this.type.TabIndex = 9;
             this.type.Text = "Type:";
             // 
@@ -115,7 +115,7 @@ namespace TournamentManager
             this.registrationEndDate.ForeColor = System.Drawing.Color.Gold;
             this.registrationEndDate.Location = new System.Drawing.Point(53, 314);
             this.registrationEndDate.Name = "registrationEndDate";
-            this.registrationEndDate.Size = new System.Drawing.Size(172, 21);
+            this.registrationEndDate.Size = new System.Drawing.Size(146, 19);
             this.registrationEndDate.TabIndex = 11;
             this.registrationEndDate.Text = "Registration end date:";
             // 
@@ -126,7 +126,7 @@ namespace TournamentManager
             this.level.ForeColor = System.Drawing.Color.Gold;
             this.level.Location = new System.Drawing.Point(54, 270);
             this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(52, 21);
+            this.level.Size = new System.Drawing.Size(44, 19);
             this.level.TabIndex = 10;
             this.level.Text = "Level:";
             // 
@@ -137,7 +137,7 @@ namespace TournamentManager
             this.tournamentStartDate.ForeColor = System.Drawing.Color.Gold;
             this.tournamentStartDate.Location = new System.Drawing.Point(54, 359);
             this.tournamentStartDate.Name = "tournamentStartDate";
-            this.tournamentStartDate.Size = new System.Drawing.Size(175, 21);
+            this.tournamentStartDate.Size = new System.Drawing.Size(151, 19);
             this.tournamentStartDate.TabIndex = 13;
             this.tournamentStartDate.Text = "Tournament start date:";
             // 
@@ -234,7 +234,7 @@ namespace TournamentManager
             this.discription.ForeColor = System.Drawing.Color.Gold;
             this.discription.Location = new System.Drawing.Point(49, 90);
             this.discription.Name = "discription";
-            this.discription.Size = new System.Drawing.Size(98, 21);
+            this.discription.Size = new System.Drawing.Size(84, 19);
             this.discription.TabIndex = 24;
             this.discription.Text = "Description:";
             // 
@@ -306,7 +306,7 @@ namespace TournamentManager
             this.labelPlace.ForeColor = System.Drawing.Color.Gold;
             this.labelPlace.Location = new System.Drawing.Point(53, 180);
             this.labelPlace.Name = "labelPlace";
-            this.labelPlace.Size = new System.Drawing.Size(52, 21);
+            this.labelPlace.Size = new System.Drawing.Size(45, 19);
             this.labelPlace.TabIndex = 31;
             this.labelPlace.Text = "Place:";
             // 
@@ -331,17 +331,18 @@ namespace TournamentManager
             this.addParticipant.UseVisualStyleBackColor = false;
             this.addParticipant.Click += new System.EventHandler(this.addParticipant_Click);
             // 
-            // comboBox1
+            // comboBoxScenario
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxScenario.FormattingEnabled = true;
+            this.comboBoxScenario.Items.AddRange(new object[] {
             "OneMatchConfrontation",
             "TwoMatchConfrontation",
             "TwoThreeWins"});
-            this.comboBox1.Location = new System.Drawing.Point(258, 405);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 35;
+            this.comboBoxScenario.Location = new System.Drawing.Point(258, 405);
+            this.comboBoxScenario.Name = "comboBoxScenario";
+            this.comboBoxScenario.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxScenario.TabIndex = 35;
+            this.comboBoxScenario.SelectedIndexChanged += new System.EventHandler(this.comboBoxScenario_SelectedIndexChanged);
             // 
             // labelTournSc
             // 
@@ -350,7 +351,7 @@ namespace TournamentManager
             this.labelTournSc.ForeColor = System.Drawing.Color.Gold;
             this.labelTournSc.Location = new System.Drawing.Point(54, 405);
             this.labelTournSc.Name = "labelTournSc";
-            this.labelTournSc.Size = new System.Drawing.Size(166, 21);
+            this.labelTournSc.Size = new System.Drawing.Size(144, 19);
             this.labelTournSc.TabIndex = 34;
             this.labelTournSc.Text = "Tournament scenario:";
             // 
@@ -360,7 +361,7 @@ namespace TournamentManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(589, 598);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxScenario);
             this.Controls.Add(this.labelTournSc);
             this.Controls.Add(this.addParticipant);
             this.Controls.Add(this.labelErrorDateStart);
@@ -387,10 +388,9 @@ namespace TournamentManager
             this.Controls.Add(this.playerСount);
             this.Controls.Add(this.nemeTournament);
             this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.textBoxCounPlayer);
+            this.Controls.Add(this.textBoxCountPlayer);
             this.Name = "CreateTournament";
             this.Text = "Create tournament";
-            this.Load += new System.EventHandler(this.CreateTournament_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +398,7 @@ namespace TournamentManager
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxCounPlayer;
+        private System.Windows.Forms.TextBox textBoxCountPlayer;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label nemeTournament;
         private System.Windows.Forms.Label playerСount;
@@ -424,7 +424,7 @@ namespace TournamentManager
         private System.Windows.Forms.Label labelPlace;
         private System.Windows.Forms.Label labelErrorDateStart;
         private System.Windows.Forms.Button addParticipant;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxScenario;
         private System.Windows.Forms.Label labelTournSc;
     }
 }

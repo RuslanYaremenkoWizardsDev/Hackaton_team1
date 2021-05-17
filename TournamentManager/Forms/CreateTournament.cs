@@ -37,7 +37,7 @@ namespace TournamentManager
         {
             DataHelper.TournamentDataInsert(textBoxName.Text, textBoxDescription.Text, comboBoxType.Text, textBoxPlace.Text,
                 "12/9/23"/*dateTimeStartTournament.Value.Date*/, "10/7/23"/*dateTimeEndRegistration.Value.Date*/, comboBoxLevel.Text,
-                Convert.ToInt32(textBoxCountPlayers.Text), comboBoxScenario.Text, result: 0);
+                Convert.ToInt32(textBoxCountPlayer.Text), comboBoxScenario.Text, result: 0);
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
@@ -61,18 +61,18 @@ namespace TournamentManager
             }
         }
 
-        private void textBoxCounPlayer_TextChanged(object sender, EventArgs e)
+        private void textBoxCountPlayer_TextChanged(object sender, EventArgs e)
         {
-            temp  = Int32.TryParse(textBoxCountPlayers.Text, out count);
+            temp  = Int32.TryParse(textBoxCountPlayer.Text, out count);
             if ( count > 0 && count <= 255)
             {
                 countplayers = count;
-                textBoxCountPlayers.Text = countplayers.ToString();
+                textBoxCountPlayer.Text = countplayers.ToString();
             }
             else
             {
                 labelErrorCount.Text = "The string must contain only numbers and number not be 0";
-                textBoxCountPlayers.BackColor = Color.Red;
+                textBoxCountPlayer.BackColor = Color.Red;
             }
         }
 
@@ -114,7 +114,7 @@ namespace TournamentManager
 
         private void dateTimeStartTourn_ValueChanged(object sender, EventArgs e)
         {
-            DateStarttemp  = dateTimeStartTournament.Value;
+            DateStarttemp  = dateTimeStartTourn.Value;
             if (DateStarttemp < DateEndRegistration)
             {
                 labelErrorDateStart.Text = "The start date of the tournament must not be earlier than the registration date";
@@ -143,6 +143,11 @@ namespace TournamentManager
 
         }
 
+        private void comboBoxScenario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void labelError_Click(object sender, EventArgs e)
         {
 
@@ -153,10 +158,7 @@ namespace TournamentManager
 
         }
 
-        private void CreateTournament_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void textBoxDescription_TextChanged(object sender, EventArgs e)
         {
