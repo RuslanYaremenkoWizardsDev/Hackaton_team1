@@ -134,7 +134,7 @@ namespace TournamentManager
             // manageEdit
             // 
             this.manageEdit.Name = "manageEdit";
-            this.manageEdit.Size = new System.Drawing.Size(188, 40);
+            this.manageEdit.Size = new System.Drawing.Size(206, 40);
             this.manageEdit.Text = "Manage";
             // 
             // StripMenuItemView
@@ -180,9 +180,10 @@ namespace TournamentManager
             this.TableFromTournamentPage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableFromTournamentPage.Location = new System.Drawing.Point(485, 201);
             this.TableFromTournamentPage.Name = "TableFromTournamentPage";
-            this.TableFromTournamentPage.RowCount = 2;
+            this.TableFromTournamentPage.RowCount = 3;
             this.TableFromTournamentPage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.TableFromTournamentPage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.TableFromTournamentPage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TableFromTournamentPage.Size = new System.Drawing.Size(898, 359);
             this.TableFromTournamentPage.TabIndex = 3;
             // 

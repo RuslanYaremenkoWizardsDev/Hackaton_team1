@@ -37,6 +37,7 @@ namespace TournamentManager
             this.Cancel = new System.Windows.Forms.Button();
             this.labelErrorLogin = new System.Windows.Forms.Label();
             this.labelErrorPassword = new System.Windows.Forms.Label();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelLogin
@@ -77,7 +78,7 @@ namespace TournamentManager
             // 
             // LoginAuthorization
             // 
-            this.LoginAuthorization.Location = new System.Drawing.Point(204, 247);
+            this.LoginAuthorization.Location = new System.Drawing.Point(289, 245);
             this.LoginAuthorization.Name = "LoginAuthorization";
             this.LoginAuthorization.Size = new System.Drawing.Size(143, 42);
             this.LoginAuthorization.TabIndex = 4;
@@ -87,7 +88,7 @@ namespace TournamentManager
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(377, 247);
+            this.Cancel.Location = new System.Drawing.Point(462, 245);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(143, 42);
             this.Cancel.TabIndex = 5;
@@ -111,11 +112,22 @@ namespace TournamentManager
             this.labelErrorPassword.Size = new System.Drawing.Size(0, 13);
             this.labelErrorPassword.TabIndex = 7;
             // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(128, 245);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(143, 42);
+            this.Back.TabIndex = 8;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.labelErrorPassword);
             this.Controls.Add(this.labelErrorLogin);
             this.Controls.Add(this.Cancel);
@@ -141,5 +153,6 @@ namespace TournamentManager
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.Label labelErrorLogin;
         private System.Windows.Forms.Label labelErrorPassword;
+        private System.Windows.Forms.Button Back;
     }
 }

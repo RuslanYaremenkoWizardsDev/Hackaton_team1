@@ -40,6 +40,7 @@ namespace TournamentManager
             this.labelErrorLoginRegistration = new System.Windows.Forms.Label();
             this.labelErrorPasswordRegistration = new System.Windows.Forms.Label();
             this.labelErrorSubmitPassword = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelLogin
@@ -98,7 +99,7 @@ namespace TournamentManager
             // 
             // Signup
             // 
-            this.Signup.Location = new System.Drawing.Point(219, 299);
+            this.Signup.Location = new System.Drawing.Point(313, 298);
             this.Signup.Name = "Signup";
             this.Signup.Size = new System.Drawing.Size(132, 44);
             this.Signup.TabIndex = 6;
@@ -108,7 +109,7 @@ namespace TournamentManager
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(371, 299);
+            this.Cancel.Location = new System.Drawing.Point(465, 298);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(132, 44);
             this.Cancel.TabIndex = 7;
@@ -140,11 +141,22 @@ namespace TournamentManager
             this.labelErrorSubmitPassword.Size = new System.Drawing.Size(0, 13);
             this.labelErrorSubmitPassword.TabIndex = 10;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(163, 298);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(132, 44);
+            this.buttonBack.TabIndex = 11;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelErrorSubmitPassword);
             this.Controls.Add(this.labelErrorPasswordRegistration);
             this.Controls.Add(this.labelErrorLoginRegistration);
@@ -176,5 +188,6 @@ namespace TournamentManager
         private System.Windows.Forms.Label labelErrorLoginRegistration;
         private System.Windows.Forms.Label labelErrorPasswordRegistration;
         private System.Windows.Forms.Label labelErrorSubmitPassword;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

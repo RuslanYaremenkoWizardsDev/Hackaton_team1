@@ -69,12 +69,14 @@ namespace TournamentManager
         {
             TournamentPage tournamentPage = new TournamentPage();
             tournamentPage.ShowDialog();
+            this.Close();
         }
 
         private void Logout_Click(object sender, EventArgs e)
         {
             Welcome welcome = new Welcome();
             welcome.ShowDialog();
+            this.Close();
         }
 
         private void Cancel_Click(object sender, EventArgs e)

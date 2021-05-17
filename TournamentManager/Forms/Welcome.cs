@@ -12,6 +12,7 @@ namespace TournamentManager
 {
     public partial class Welcome : Form
     {
+        public bool check;
         public Welcome()
         {
             InitializeComponent();
@@ -19,14 +20,20 @@ namespace TournamentManager
 
         private void Login_Click(object sender, EventArgs e)
         {
+            check = true;
             Authorization authorization = new Authorization();
             authorization.ShowDialog();
+            if (check == true)
+            {
+                this.Close();
+            }
         }
 
         private void Signup_Click(object sender, EventArgs e)
         {
             Registration registration = new Registration();
             registration.ShowDialog();
+            this.Close();
         }
     }
 }

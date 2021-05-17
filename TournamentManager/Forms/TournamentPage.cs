@@ -21,6 +21,7 @@ namespace TournamentManager
         {
             CreateTournament createtournament = new CreateTournament();
             createtournament.ShowDialog();
+            this.Close();
         }
 
         private void newFile_Click(object sender, EventArgs e)
@@ -65,7 +66,8 @@ namespace TournamentManager
 
         private void manageEdit_Click(object sender, EventArgs e)
         {
-
+            TournamentManager tournament = new TournamentManager();
+            tournament.ShowDialog();
         }
 
         private void themeView_Click(object sender, EventArgs e)
@@ -78,5 +80,7 @@ namespace TournamentManager
             Account account = new Account();
             account.ShowDialog();
         }
+
+      
     }
 }

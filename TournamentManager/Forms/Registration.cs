@@ -46,14 +46,9 @@ namespace TournamentManager
                     }
                     else
                     {
-                        
                             login = textBoxLogin.Text;                            
-                            rightlogin = true;
-                        
-                        //labelErrorLoginRegistration.Text = "";
-                        //textBoxLogin.BackColor = Color.White;                        
+                            rightlogin = true;                  
                     }
-                   
                 }
             }
             else
@@ -110,6 +105,7 @@ namespace TournamentManager
             {
                 Authorization authorization = new Authorization();
                 authorization.ShowDialog();
+                this.Close();
             }
             else
             {
@@ -120,6 +116,13 @@ namespace TournamentManager
                 labelErrorSubmitPassword.Text = "Please, check for correctness submit password";
                 textBoxSubmitPassword.BackColor = Color.Red;
             }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = new Welcome();
+            welcome.ShowDialog();
+            this.Close();
         }
     }
 }

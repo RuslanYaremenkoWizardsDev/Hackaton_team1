@@ -73,6 +73,7 @@ namespace TournamentManager
             {
                 TournamentPage tournamentPage = new TournamentPage();
                 tournamentPage.ShowDialog();
+                this.Close();
             }
             else 
             {
@@ -81,6 +82,13 @@ namespace TournamentManager
                 labelErrorPassword.Text = "Please, check for correctness password";
                 textBoxPassword.BackColor = Color.Red;
             }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = new Welcome();
+            welcome.ShowDialog();
+            this.Close();
         }
     }
 }
