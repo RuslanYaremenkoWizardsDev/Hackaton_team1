@@ -23,6 +23,8 @@ namespace TournamentManager
         }
         private void Tournament_manager_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tournamentManagerDataSet1.Team' table. You can move, or remove it, as needed.
+            this.teamTableAdapter.Fill(this.tournamentManagerDataSet1.Team);
             DrawTournTable drowTeble = new DrawTournTable();
             Bitmap _mainBitmap;
             Bitmap _tmpBitmap;
