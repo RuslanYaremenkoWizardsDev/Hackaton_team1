@@ -13,9 +13,9 @@ namespace TournamentManager
 {
     public partial class CreateTournament : Form
     {
-        public string name = "";
-        public string place = "";
-        public string description = "";
+        public string name = string.Empty;
+        public string place = string.Empty;
+        public string description = string.Empty;
         public bool temp;
         public int count, countplayers;
         public string LevelTournament;

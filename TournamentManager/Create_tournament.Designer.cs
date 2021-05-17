@@ -37,7 +37,6 @@ namespace TournamentManager
             this.registrationEndDate = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
             this.tournamentStartDate = new System.Windows.Forms.Label();
-            this.GeneratePlace = new System.Windows.Forms.Button();
             this.cancelTournament = new System.Windows.Forms.Button();
             this.saveTournament = new System.Windows.Forms.Button();
             this.Place = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@ namespace TournamentManager
             this.dateTimeStartTournament = new System.Windows.Forms.DateTimePicker();
             this.discription = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
-            this.GenerateName = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
             this.labelErrorPlace = new System.Windows.Forms.Label();
             this.labelErrorDescription = new System.Windows.Forms.Label();
@@ -128,15 +126,6 @@ namespace TournamentManager
             this.tournamentStartDate.Size = new System.Drawing.Size(114, 13);
             this.tournamentStartDate.TabIndex = 13;
             this.tournamentStartDate.Text = "Tournament start date:";
-            // 
-            // GeneratePlace
-            // 
-            this.GeneratePlace.Location = new System.Drawing.Point(300, 211);
-            this.GeneratePlace.Name = "GeneratePlace";
-            this.GeneratePlace.Size = new System.Drawing.Size(99, 25);
-            this.GeneratePlace.TabIndex = 14;
-            this.GeneratePlace.Text = "Generate place";
-            this.GeneratePlace.UseVisualStyleBackColor = true;
             // 
             // cancelTournament
             // 
@@ -230,16 +219,6 @@ namespace TournamentManager
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TextChanged += new System.EventHandler(this.textBoxDescription_TextChanged);
             // 
-            // GenerateName
-            // 
-            this.GenerateName.Location = new System.Drawing.Point(294, 50);
-            this.GenerateName.Name = "GenerateName";
-            this.GenerateName.Size = new System.Drawing.Size(99, 25);
-            this.GenerateName.TabIndex = 25;
-            this.GenerateName.Text = "Generate name";
-            this.GenerateName.UseVisualStyleBackColor = true;
-            this.GenerateName.Click += new System.EventHandler(this.GenerateName_Click);
-            // 
             // labelError
             // 
             this.labelError.AutoSize = true;
@@ -323,7 +302,6 @@ namespace TournamentManager
             this.Controls.Add(this.labelErrorDescription);
             this.Controls.Add(this.labelErrorPlace);
             this.Controls.Add(this.labelError);
-            this.Controls.Add(this.GenerateName);
             this.Controls.Add(this.discription);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.dateTimeStartTournament);
@@ -334,7 +312,6 @@ namespace TournamentManager
             this.Controls.Add(this.textBoxPlace);
             this.Controls.Add(this.saveTournament);
             this.Controls.Add(this.cancelTournament);
-            this.Controls.Add(this.GeneratePlace);
             this.Controls.Add(this.tournamentStartDate);
             this.Controls.Add(this.registrationEndDate);
             this.Controls.Add(this.level);
@@ -361,7 +338,6 @@ namespace TournamentManager
         private System.Windows.Forms.Label registrationEndDate;
         private System.Windows.Forms.Label level;
         private System.Windows.Forms.Label tournamentStartDate;
-        private System.Windows.Forms.Button GeneratePlace;
         private System.Windows.Forms.Button cancelTournament;
         private System.Windows.Forms.Button saveTournament;
         private System.Windows.Forms.Label Place;
@@ -372,7 +348,6 @@ namespace TournamentManager
         private System.Windows.Forms.DateTimePicker dateTimeStartTournament;
         private System.Windows.Forms.Label discription;
         private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Button GenerateName;
         private System.Windows.Forms.Label labelError;
         private System.Windows.Forms.Label labelErrorPlace;
         private System.Windows.Forms.Label labelErrorDescription;
