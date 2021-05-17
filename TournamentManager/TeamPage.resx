@@ -117,40 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStripTournamentPage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LeftPageReturn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rQAAAK0BVE7WMAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADaSURBVEhLtdY9
-        CsJAGITh6Em8gH+917cQbLSxEez9qTxAfEcNhN2J2ezGgadwWL6BVFZ1XWcjcxywxcy+cWWK7/Er9EP2
-        9p0r+5DwuFwwjd6GRR/ijj+xse9d2YUMOi62dMjg42LLEMk6LrZsI9nHxZYNUnRcbCmk+Lj4cqTjEhdV
-        NcEJxcclLv498C4/n+iG4hFbChllxJYNskDRiC3biEbuyBqxZYgskTViS4dkjdiyC1lh0IgtfyEaeSBp
-        JCpSEDdytm9dmYKs0R7Z2XeuTEU0ckTH35a6egFklVgxYUZFYwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonRightPageForward.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rQAAAK0BVE7WMAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADdSURBVEhLtZY7
-        CgJBEERbT+IF/OVe30Aw0cREMPcTeYCxGlYcdt6su9ta8GB5NFUw0VpKqUCZia04ijXd9IWl2U74h/MQ
-        o0dYmp2b8nxkRbffYGm2EU8RHkHpKDRyF4NGUL5RaiNLuidQ5iihEZRtlNrIgu5zUBIKjdxE5wjKGkpt
-        ZE73DsoulEEjheiDQiMnMSlu26IPyv8GFCq/ivgTKYPKHZSEMrjcQdlGGVXuoMxRRpc7KN8ooXIHpaOE
-        yx2WPyp3SmE2FRcRLndYmu2b4lC5w/Lz23KIlKeU7AVZ81gx3VmIxwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="tournamentBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>494, 17</value>
-  </metadata>
-  <metadata name="tournamentManagerDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>287, 17</value>
-  </metadata>
-  <metadata name="tournamentTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>689, 17</value>
-  </metadata>
 </root>

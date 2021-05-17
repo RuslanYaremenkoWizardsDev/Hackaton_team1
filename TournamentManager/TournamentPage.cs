@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -77,6 +77,13 @@ namespace TournamentManager
         {
             Account account = new Account();
             account.ShowDialog();
+        }
+
+        private void TournamentPage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'tournamentManagerDataSet.Tournament' table. You can move, or remove it, as needed.
+            this.tournamentTableAdapter.Fill(this.tournamentManagerDataSet.Tournament);
+
         }
     }
 }

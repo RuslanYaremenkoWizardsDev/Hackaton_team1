@@ -29,7 +29,7 @@ namespace TournamentManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxCounPlayer = new System.Windows.Forms.TextBox();
+            this.textBoxCountPlayers = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.nemeTournament = new System.Windows.Forms.Label();
             this.playerСount = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@ namespace TournamentManager
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.comboBoxLevel = new System.Windows.Forms.ComboBox();
             this.dateTimeEndRegistration = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeStartTourn = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeStartTournament = new System.Windows.Forms.DateTimePicker();
             this.discription = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.GenerateName = new System.Windows.Forms.Button();
@@ -55,15 +55,17 @@ namespace TournamentManager
             this.labelErrorCount = new System.Windows.Forms.Label();
             this.labelPlace = new System.Windows.Forms.Label();
             this.labelErrorDateStart = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxScenario = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBoxCounPlayer
+            // textBoxCountPlayers
             // 
-            this.textBoxCounPlayer.Location = new System.Drawing.Point(168, 159);
-            this.textBoxCounPlayer.Name = "textBoxCounPlayer";
-            this.textBoxCounPlayer.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCounPlayer.TabIndex = 1;
-            this.textBoxCounPlayer.TextChanged += new System.EventHandler(this.textBoxCounPlayer_TextChanged);
+            this.textBoxCountPlayers.Location = new System.Drawing.Point(168, 159);
+            this.textBoxCountPlayers.Name = "textBoxCountPlayers";
+            this.textBoxCountPlayers.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCountPlayers.TabIndex = 1;
+            this.textBoxCountPlayers.TextChanged += new System.EventHandler(this.textBoxCounPlayer_TextChanged);
             // 
             // textBoxName
             // 
@@ -138,7 +140,7 @@ namespace TournamentManager
             // 
             // cancelTournament
             // 
-            this.cancelTournament.Location = new System.Drawing.Point(318, 444);
+            this.cancelTournament.Location = new System.Drawing.Point(318, 498);
             this.cancelTournament.Name = "cancelTournament";
             this.cancelTournament.Size = new System.Drawing.Size(75, 25);
             this.cancelTournament.TabIndex = 15;
@@ -148,7 +150,7 @@ namespace TournamentManager
             // 
             // saveTournament
             // 
-            this.saveTournament.Location = new System.Drawing.Point(237, 444);
+            this.saveTournament.Location = new System.Drawing.Point(237, 498);
             this.saveTournament.Name = "saveTournament";
             this.saveTournament.Size = new System.Drawing.Size(75, 25);
             this.saveTournament.TabIndex = 16;
@@ -199,17 +201,17 @@ namespace TournamentManager
             // 
             this.dateTimeEndRegistration.Location = new System.Drawing.Point(168, 341);
             this.dateTimeEndRegistration.Name = "dateTimeEndRegistration";
-            this.dateTimeEndRegistration.Size = new System.Drawing.Size(112, 20);
+            this.dateTimeEndRegistration.Size = new System.Drawing.Size(178, 20);
             this.dateTimeEndRegistration.TabIndex = 21;
             this.dateTimeEndRegistration.ValueChanged += new System.EventHandler(this.dateTimeEndRegistration_ValueChanged);
             // 
-            // dateTimeStartTourn
+            // dateTimeStartTournament
             // 
-            this.dateTimeStartTourn.Location = new System.Drawing.Point(168, 387);
-            this.dateTimeStartTourn.Name = "dateTimeStartTourn";
-            this.dateTimeStartTourn.Size = new System.Drawing.Size(112, 20);
-            this.dateTimeStartTourn.TabIndex = 22;
-            this.dateTimeStartTourn.ValueChanged += new System.EventHandler(this.dateTimeStartTourn_ValueChanged);
+            this.dateTimeStartTournament.Location = new System.Drawing.Point(168, 387);
+            this.dateTimeStartTournament.Name = "dateTimeStartTournament";
+            this.dateTimeStartTournament.Size = new System.Drawing.Size(178, 20);
+            this.dateTimeStartTournament.TabIndex = 22;
+            this.dateTimeStartTournament.ValueChanged += new System.EventHandler(this.dateTimeStartTourn_ValueChanged);
             // 
             // discription
             // 
@@ -287,11 +289,34 @@ namespace TournamentManager
             this.labelErrorDateStart.Size = new System.Drawing.Size(0, 13);
             this.labelErrorDateStart.TabIndex = 32;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 429);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 13);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Tournament scenario:";
+            // 
+            // comboBoxScenario
+            // 
+            this.comboBoxScenario.FormattingEnabled = true;
+            this.comboBoxScenario.Items.AddRange(new object[] {
+            "OneMatchConfrontation",
+            "TwoMatchConfrontation",
+            "ToThreeWins"});
+            this.comboBoxScenario.Location = new System.Drawing.Point(165, 419);
+            this.comboBoxScenario.Name = "comboBoxScenario";
+            this.comboBoxScenario.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxScenario.TabIndex = 36;
+            // 
             // CreateTournament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 491);
+            this.ClientSize = new System.Drawing.Size(464, 535);
+            this.Controls.Add(this.comboBoxScenario);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelErrorDateStart);
             this.Controls.Add(this.labelPlace);
             this.Controls.Add(this.labelErrorCount);
@@ -301,7 +326,7 @@ namespace TournamentManager
             this.Controls.Add(this.GenerateName);
             this.Controls.Add(this.discription);
             this.Controls.Add(this.textBoxDescription);
-            this.Controls.Add(this.dateTimeStartTourn);
+            this.Controls.Add(this.dateTimeStartTournament);
             this.Controls.Add(this.dateTimeEndRegistration);
             this.Controls.Add(this.comboBoxLevel);
             this.Controls.Add(this.comboBoxType);
@@ -317,7 +342,7 @@ namespace TournamentManager
             this.Controls.Add(this.playerСount);
             this.Controls.Add(this.nemeTournament);
             this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.textBoxCounPlayer);
+            this.Controls.Add(this.textBoxCountPlayers);
             this.Name = "CreateTournament";
             this.Text = "Create tournament";
             this.Load += new System.EventHandler(this.CreateTournament_Load);
@@ -328,7 +353,7 @@ namespace TournamentManager
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxCounPlayer;
+        private System.Windows.Forms.TextBox textBoxCountPlayers;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label nemeTournament;
         private System.Windows.Forms.Label playerСount;
@@ -344,7 +369,7 @@ namespace TournamentManager
         private System.Windows.Forms.ComboBox comboBoxType;
         private System.Windows.Forms.ComboBox comboBoxLevel;
         private System.Windows.Forms.DateTimePicker dateTimeEndRegistration;
-        private System.Windows.Forms.DateTimePicker dateTimeStartTourn;
+        private System.Windows.Forms.DateTimePicker dateTimeStartTournament;
         private System.Windows.Forms.Label discription;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button GenerateName;
@@ -354,5 +379,7 @@ namespace TournamentManager
         private System.Windows.Forms.Label labelErrorCount;
         private System.Windows.Forms.Label labelPlace;
         private System.Windows.Forms.Label labelErrorDateStart;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxScenario;
     }
 }
