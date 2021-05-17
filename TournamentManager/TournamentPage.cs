@@ -89,5 +89,11 @@ namespace TournamentManager
         {
             this.tournamentTableAdapter.Fill(this.tournamentManagerDataSet.Tournament);
         }
+
+        private void buttonAccount_Click(object sender, EventArgs e)
+        {
+            Account account = new Account();
+            account.ShowDialog();
+        }
     }
 }

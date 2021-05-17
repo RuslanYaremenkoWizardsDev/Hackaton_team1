@@ -65,6 +65,8 @@ namespace TournamentManager
             this.tournamentManagerDataSet = new TournamentManager.TournamentManagerDataSet();
             this.tournamentTableAdapter = new TournamentManager.TournamentManagerDataSetTableAdapters.TournamentTableAdapter();
             this.buttonRefresh = new System.Windows.Forms.Button();
+            this.tableAdapterManager1 = new TournamentManager.TournamentManagerDataSetTableAdapters.TableAdapterManager();
+            this.buttonAccount = new System.Windows.Forms.Button();
             this.menuStripTournamentPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tournamentBindingSource)).BeginInit();
@@ -98,21 +100,21 @@ namespace TournamentManager
             // newFile
             // 
             this.newFile.Name = "newFile";
-            this.newFile.Size = new System.Drawing.Size(180, 34);
+            this.newFile.Size = new System.Drawing.Size(137, 34);
             this.newFile.Text = "New";
             this.newFile.Click += new System.EventHandler(this.newFile_Click);
             // 
             // open
             // 
             this.open.Name = "open";
-            this.open.Size = new System.Drawing.Size(180, 34);
+            this.open.Size = new System.Drawing.Size(137, 34);
             this.open.Text = "Open";
             this.open.Click += new System.EventHandler(this.openFile_Click);
             // 
             // save
             // 
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(180, 34);
+            this.save.Size = new System.Drawing.Size(137, 34);
             this.save.Text = "Save";
             this.save.Click += new System.EventHandler(this.saveFile);
             // 
@@ -339,12 +341,29 @@ namespace TournamentManager
             this.buttonRefresh.UseVisualStyleBackColor = true;
             this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.TournamentTableAdapter = this.tournamentTableAdapter;
+            this.tableAdapterManager1.UpdateOrder = TournamentManager.TournamentManagerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // buttonAccount
+            // 
+            this.buttonAccount.Location = new System.Drawing.Point(957, 290);
+            this.buttonAccount.Name = "buttonAccount";
+            this.buttonAccount.Size = new System.Drawing.Size(89, 44);
+            this.buttonAccount.TabIndex = 11;
+            this.buttonAccount.Text = "Account";
+            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.Click += new System.EventHandler(this.buttonAccount_Click);
+            // 
             // TournamentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1167, 346);
+            this.ClientSize = new System.Drawing.Size(1167, 486);
+            this.Controls.Add(this.buttonAccount);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Username);
@@ -403,6 +422,8 @@ namespace TournamentManager
         private System.Windows.Forms.DataGridViewTextBoxColumn tournamentScenarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn resultDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button buttonRefresh;
+        private TournamentManagerDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.Button buttonAccount;
     }
 }
 
