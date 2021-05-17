@@ -58,6 +58,7 @@
     <Compile Include="Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\DrawTournTable.cs" />
     <Compile Include="EditResult.cs">
       <SubType>Form</SubType>
     </Compile>

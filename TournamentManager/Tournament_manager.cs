@@ -12,6 +12,7 @@ namespace TournamentManager
 {
     public partial class Tournament_manager : Form
     {
+        
         public Tournament_manager()
         {
             InitializeComponent();
@@ -22,6 +23,26 @@ namespace TournamentManager
         {
             EditResult editresult = new EditResult();
             editresult.ShowDialog();
+        }
+
+        private void Tournament_manager_Load(object sender, EventArgs e)
+        {
+            DrawTournTable drowTeble = new DrawTournTable();
+            Bitmap _mainBitmap;
+            Bitmap _tmpBitmap;
+            Graphics _graphics;
+            Pen _pen;
+
+            _mainBitmap = new Bitmap(cupGrid.Width, cupGrid.Height);
+            _graphics = Graphics.FromImage(_mainBitmap);
+            _graphics.Clear(Color.White);
+
+            
+            _pen = new Pen(Color.Black);
+
+            drowTeble.Initialize();
+            drowTeble.Draw(_graphics, _pen);
+            cupGrid.Image = _mainBitmap;
         }
     }
 }
