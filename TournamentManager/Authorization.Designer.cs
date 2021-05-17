@@ -35,6 +35,8 @@ namespace TournamentManager
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.LoginAuthorization = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
+            this.labelErrorLogin = new System.Windows.Forms.Label();
+            this.labelErrorPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelLogin
@@ -43,7 +45,7 @@ namespace TournamentManager
             this.labelLogin.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLogin.Location = new System.Drawing.Point(219, 73);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(68, 25);
+            this.labelLogin.Size = new System.Drawing.Size(56, 21);
             this.labelLogin.TabIndex = 0;
             this.labelLogin.Text = "Log in:";
             // 
@@ -61,7 +63,7 @@ namespace TournamentManager
             this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPassword.Location = new System.Drawing.Point(219, 128);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(95, 25);
+            this.labelPassword.Size = new System.Drawing.Size(79, 21);
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password:";
             // 
@@ -93,11 +95,29 @@ namespace TournamentManager
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
+            // labelErrorLogin
+            // 
+            this.labelErrorLogin.AutoSize = true;
+            this.labelErrorLogin.Location = new System.Drawing.Point(347, 106);
+            this.labelErrorLogin.Name = "labelErrorLogin";
+            this.labelErrorLogin.Size = new System.Drawing.Size(0, 13);
+            this.labelErrorLogin.TabIndex = 6;
+            // 
+            // labelErrorPassword
+            // 
+            this.labelErrorPassword.AutoSize = true;
+            this.labelErrorPassword.Location = new System.Drawing.Point(347, 151);
+            this.labelErrorPassword.Name = "labelErrorPassword";
+            this.labelErrorPassword.Size = new System.Drawing.Size(0, 13);
+            this.labelErrorPassword.TabIndex = 7;
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelErrorPassword);
+            this.Controls.Add(this.labelErrorLogin);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.LoginAuthorization);
             this.Controls.Add(this.textBoxPassword);
@@ -119,5 +139,7 @@ namespace TournamentManager
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button LoginAuthorization;
         private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Label labelErrorLogin;
+        private System.Windows.Forms.Label labelErrorPassword;
     }
 }
