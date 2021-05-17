@@ -60,6 +60,6 @@ namespace TournamentManager.Forms
             this.Close();
         }
 
-        
+      
     }
 }

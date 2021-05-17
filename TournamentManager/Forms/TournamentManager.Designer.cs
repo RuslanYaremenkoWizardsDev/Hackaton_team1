@@ -42,17 +42,20 @@ namespace TournamentManager
             this.dataGridResaltTour.Location = new System.Drawing.Point(0, 0);
             this.dataGridResaltTour.Name = "dataGridResaltTour";
             this.dataGridResaltTour.RowHeadersWidth = 47;
-            this.dataGridResaltTour.Size = new System.Drawing.Size(1904, 175);
+            this.dataGridResaltTour.Size = new System.Drawing.Size(839, 175);
             this.dataGridResaltTour.TabIndex = 0;
             // 
             // Edit_result
             // 
+            this.Edit_result.BackColor = System.Drawing.Color.Gold;
+            this.Edit_result.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Edit_result.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Edit_result.Location = new System.Drawing.Point(339, 226);
             this.Edit_result.Name = "Edit_result";
             this.Edit_result.Size = new System.Drawing.Size(150, 45);
             this.Edit_result.TabIndex = 1;
             this.Edit_result.Text = "Edit Result";
-            this.Edit_result.UseVisualStyleBackColor = true;
+            this.Edit_result.UseVisualStyleBackColor = false;
             this.Edit_result.Click += new System.EventHandler(this.EditResult);
             // 
             // cupGrid
@@ -64,15 +67,16 @@ namespace TournamentManager
             this.cupGrid.TabIndex = 2;
             this.cupGrid.TabStop = false;
             // 
-            // Tournament_manager
+            // TournamentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(839, 656);
             this.Controls.Add(this.cupGrid);
             this.Controls.Add(this.Edit_result);
             this.Controls.Add(this.dataGridResaltTour);
-            this.Name = "Tournament_manager";
+            this.Name = "TournamentManager";
             this.Text = "Tournament manager";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridResaltTour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cupGrid)).EndInit();

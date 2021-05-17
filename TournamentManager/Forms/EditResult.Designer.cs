@@ -42,36 +42,42 @@ namespace TournamentManager
             // teamOne
             // 
             this.teamOne.AutoSize = true;
-            this.teamOne.Location = new System.Drawing.Point(83, 55);
+            this.teamOne.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.teamOne.ForeColor = System.Drawing.Color.Gold;
+            this.teamOne.Location = new System.Drawing.Point(61, 44);
             this.teamOne.Name = "teamOne";
-            this.teamOne.Size = new System.Drawing.Size(52, 13);
+            this.teamOne.Size = new System.Drawing.Size(82, 21);
             this.teamOne.TabIndex = 0;
             this.teamOne.Text = "First team";
             // 
             // teamSecond
             // 
             this.teamSecond.AutoSize = true;
-            this.teamSecond.Location = new System.Drawing.Point(192, 55);
+            this.teamSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.teamSecond.ForeColor = System.Drawing.Color.Gold;
+            this.teamSecond.Location = new System.Drawing.Point(171, 44);
             this.teamSecond.Name = "teamSecond";
-            this.teamSecond.Size = new System.Drawing.Size(73, 13);
+            this.teamSecond.Size = new System.Drawing.Size(110, 21);
             this.teamSecond.TabIndex = 1;
             this.teamSecond.Text = "Second team ";
             // 
             // enteResult
             // 
             this.enteResult.AutoSize = true;
-            this.enteResult.Location = new System.Drawing.Point(332, 55);
+            this.enteResult.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.enteResult.ForeColor = System.Drawing.Color.Gold;
+            this.enteResult.Location = new System.Drawing.Point(310, 44);
             this.enteResult.Name = "enteResult";
-            this.enteResult.Size = new System.Drawing.Size(53, 13);
+            this.enteResult.Size = new System.Drawing.Size(83, 21);
             this.enteResult.TabIndex = 2;
             this.enteResult.Text = "Edit result";
             // 
             // comboTeamOne
             // 
             this.comboTeamOne.FormattingEnabled = true;
-            this.comboTeamOne.Location = new System.Drawing.Point(47, 81);
+            this.comboTeamOne.Location = new System.Drawing.Point(38, 80);
             this.comboTeamOne.Name = "comboTeamOne";
-            this.comboTeamOne.Size = new System.Drawing.Size(121, 21);
+            this.comboTeamOne.Size = new System.Drawing.Size(120, 21);
             this.comboTeamOne.TabIndex = 3;
             this.comboTeamOne.SelectedIndexChanged += new System.EventHandler(this.comboTeamOne_SelectedIndexChanged);
             // 
@@ -80,7 +86,7 @@ namespace TournamentManager
             this.comboteamSecond.FormattingEnabled = true;
             this.comboteamSecond.Location = new System.Drawing.Point(174, 81);
             this.comboteamSecond.Name = "comboteamSecond";
-            this.comboteamSecond.Size = new System.Drawing.Size(121, 21);
+            this.comboteamSecond.Size = new System.Drawing.Size(120, 21);
             this.comboteamSecond.TabIndex = 4;
             this.comboteamSecond.SelectedIndexChanged += new System.EventHandler(this.comboteamSecond_SelectedIndexChanged);
             // 
@@ -94,28 +100,35 @@ namespace TournamentManager
             // 
             // saveResult
             // 
-            this.saveResult.Location = new System.Drawing.Point(254, 421);
+            this.saveResult.BackColor = System.Drawing.Color.Gold;
+            this.saveResult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.saveResult.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveResult.Location = new System.Drawing.Point(168, 212);
             this.saveResult.Name = "saveResult";
-            this.saveResult.Size = new System.Drawing.Size(75, 25);
+            this.saveResult.Size = new System.Drawing.Size(115, 35);
             this.saveResult.TabIndex = 18;
             this.saveResult.Text = "Save";
-            this.saveResult.UseVisualStyleBackColor = true;
+            this.saveResult.UseVisualStyleBackColor = false;
             this.saveResult.Click += new System.EventHandler(this.saveResult_Click);
             // 
             // cancelResult
             // 
-            this.cancelResult.Location = new System.Drawing.Point(335, 421);
+            this.cancelResult.BackColor = System.Drawing.Color.Gold;
+            this.cancelResult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancelResult.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cancelResult.Location = new System.Drawing.Point(295, 212);
             this.cancelResult.Name = "cancelResult";
-            this.cancelResult.Size = new System.Drawing.Size(75, 25);
+            this.cancelResult.Size = new System.Drawing.Size(115, 35);
             this.cancelResult.TabIndex = 17;
             this.cancelResult.Text = "Cancel";
-            this.cancelResult.UseVisualStyleBackColor = true;
+            this.cancelResult.UseVisualStyleBackColor = false;
             this.cancelResult.Click += new System.EventHandler(this.cancelResult_Click);
             // 
             // EditResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(464, 491);
             this.Controls.Add(this.saveResult);
             this.Controls.Add(this.cancelResult);

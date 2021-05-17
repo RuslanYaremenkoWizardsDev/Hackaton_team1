@@ -124,5 +124,7 @@ namespace TournamentManager
             welcome.ShowDialog();
             this.Close();
         }
+
+     
     }
 }

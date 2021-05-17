@@ -132,6 +132,21 @@ namespace TournamentManager
             participant.ShowDialog();
         }
 
+        private void labelErrorDescription_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelErrorCount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelError_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void GenerateName_Click(object sender, EventArgs e)
         {
 

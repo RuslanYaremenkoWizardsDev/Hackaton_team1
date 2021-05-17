@@ -46,81 +46,91 @@ namespace TournamentManager
             // labelLogin
             // 
             this.labelLogin.AutoSize = true;
-            this.labelLogin.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelLogin.Location = new System.Drawing.Point(193, 99);
+            this.labelLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11.78182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelLogin.ForeColor = System.Drawing.Color.Gold;
+            this.labelLogin.Location = new System.Drawing.Point(210, 86);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(68, 25);
+            this.labelLogin.Size = new System.Drawing.Size(69, 25);
             this.labelLogin.TabIndex = 0;
             this.labelLogin.Text = "Log in:";
             // 
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Password.Location = new System.Drawing.Point(193, 154);
+            this.Password.Font = new System.Drawing.Font("Segoe UI Semibold", 11.78182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Password.ForeColor = System.Drawing.Color.Gold;
+            this.Password.Location = new System.Drawing.Point(210, 141);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(95, 25);
+            this.Password.Size = new System.Drawing.Size(96, 25);
             this.Password.TabIndex = 1;
             this.Password.Text = "Password:";
             // 
             // SubmitPassword
             // 
             this.SubmitPassword.AutoSize = true;
-            this.SubmitPassword.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SubmitPassword.Location = new System.Drawing.Point(193, 208);
+            this.SubmitPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 11.78182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SubmitPassword.ForeColor = System.Drawing.Color.Gold;
+            this.SubmitPassword.Location = new System.Drawing.Point(210, 195);
             this.SubmitPassword.Name = "SubmitPassword";
-            this.SubmitPassword.Size = new System.Drawing.Size(160, 25);
+            this.SubmitPassword.Size = new System.Drawing.Size(163, 25);
             this.SubmitPassword.TabIndex = 2;
             this.SubmitPassword.Text = "Submit password:";
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(286, 104);
+            this.textBoxLogin.Location = new System.Drawing.Point(396, 92);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(150, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(200, 20);
             this.textBoxLogin.TabIndex = 3;
             this.textBoxLogin.TextChanged += new System.EventHandler(this.textBoxLogin_TextChanged);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(306, 159);
+            this.textBoxPassword.Location = new System.Drawing.Point(396, 146);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(150, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(200, 20);
             this.textBoxPassword.TabIndex = 4;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // textBoxSubmitPassword
             // 
-            this.textBoxSubmitPassword.Location = new System.Drawing.Point(371, 213);
+            this.textBoxSubmitPassword.Location = new System.Drawing.Point(396, 200);
             this.textBoxSubmitPassword.Name = "textBoxSubmitPassword";
-            this.textBoxSubmitPassword.Size = new System.Drawing.Size(150, 20);
+            this.textBoxSubmitPassword.Size = new System.Drawing.Size(200, 20);
             this.textBoxSubmitPassword.TabIndex = 5;
             this.textBoxSubmitPassword.TextChanged += new System.EventHandler(this.textBoxSubmitpassword_TextChanged);
             // 
             // Signup
             // 
-            this.Signup.Location = new System.Drawing.Point(313, 298);
+            this.Signup.BackColor = System.Drawing.Color.Gold;
+            this.Signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Signup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Signup.Location = new System.Drawing.Point(319, 293);
             this.Signup.Name = "Signup";
             this.Signup.Size = new System.Drawing.Size(132, 44);
             this.Signup.TabIndex = 6;
             this.Signup.Text = "Sign up";
-            this.Signup.UseVisualStyleBackColor = true;
+            this.Signup.UseVisualStyleBackColor = false;
             this.Signup.Click += new System.EventHandler(this.Signup_Click);
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(465, 298);
+            this.Cancel.BackColor = System.Drawing.Color.Gold;
+            this.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Cancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Cancel.Location = new System.Drawing.Point(471, 293);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(132, 44);
             this.Cancel.TabIndex = 7;
             this.Cancel.Text = "Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.UseVisualStyleBackColor = false;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // labelErrorLoginRegistration
             // 
             this.labelErrorLoginRegistration.AutoSize = true;
-            this.labelErrorLoginRegistration.Location = new System.Drawing.Point(283, 127);
+            this.labelErrorLoginRegistration.ForeColor = System.Drawing.Color.Gold;
+            this.labelErrorLoginRegistration.Location = new System.Drawing.Point(400, 117);
             this.labelErrorLoginRegistration.Name = "labelErrorLoginRegistration";
             this.labelErrorLoginRegistration.Size = new System.Drawing.Size(0, 13);
             this.labelErrorLoginRegistration.TabIndex = 8;
@@ -128,7 +138,8 @@ namespace TournamentManager
             // labelErrorPasswordRegistration
             // 
             this.labelErrorPasswordRegistration.AutoSize = true;
-            this.labelErrorPasswordRegistration.Location = new System.Drawing.Point(310, 186);
+            this.labelErrorPasswordRegistration.ForeColor = System.Drawing.Color.Gold;
+            this.labelErrorPasswordRegistration.Location = new System.Drawing.Point(399, 175);
             this.labelErrorPasswordRegistration.Name = "labelErrorPasswordRegistration";
             this.labelErrorPasswordRegistration.Size = new System.Drawing.Size(0, 13);
             this.labelErrorPasswordRegistration.TabIndex = 9;
@@ -136,25 +147,30 @@ namespace TournamentManager
             // labelErrorSubmitPassword
             // 
             this.labelErrorSubmitPassword.AutoSize = true;
-            this.labelErrorSubmitPassword.Location = new System.Drawing.Point(376, 240);
+            this.labelErrorSubmitPassword.ForeColor = System.Drawing.Color.Gold;
+            this.labelErrorSubmitPassword.Location = new System.Drawing.Point(399, 227);
             this.labelErrorSubmitPassword.Name = "labelErrorSubmitPassword";
             this.labelErrorSubmitPassword.Size = new System.Drawing.Size(0, 13);
             this.labelErrorSubmitPassword.TabIndex = 10;
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(163, 298);
+            this.buttonBack.BackColor = System.Drawing.Color.Gold;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Location = new System.Drawing.Point(169, 293);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(132, 44);
             this.buttonBack.TabIndex = 11;
             this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelErrorSubmitPassword);

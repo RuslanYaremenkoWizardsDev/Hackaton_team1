@@ -44,7 +44,6 @@ namespace TournamentManager
             this.StripMenuItemView = new System.Windows.Forms.ToolStripMenuItem();
             this.themeView = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Search = new System.Windows.Forms.Button();
             this.TableFromTournamentPage = new System.Windows.Forms.TableLayoutPanel();
             this.AddTour = new System.Windows.Forms.Button();
             this.Pagination = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@ namespace TournamentManager
             // 
             // menuStripTournamentPage
             // 
+            this.menuStripTournamentPage.BackColor = System.Drawing.Color.Gold;
             this.menuStripTournamentPage.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.menuStripTournamentPage.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStripTournamentPage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -134,7 +134,7 @@ namespace TournamentManager
             // manageEdit
             // 
             this.manageEdit.Name = "manageEdit";
-            this.manageEdit.Size = new System.Drawing.Size(206, 40);
+            this.manageEdit.Size = new System.Drawing.Size(188, 40);
             this.manageEdit.Text = "Manage";
             // 
             // StripMenuItemView
@@ -148,7 +148,7 @@ namespace TournamentManager
             // themeView
             // 
             this.themeView.Name = "themeView";
-            this.themeView.Size = new System.Drawing.Size(173, 40);
+            this.themeView.Size = new System.Drawing.Size(206, 40);
             this.themeView.Text = "Theme";
             // 
             // contextMenuStrip1
@@ -156,15 +156,6 @@ namespace TournamentManager
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // Search
-            // 
-            this.Search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Search.Location = new System.Drawing.Point(687, 79);
-            this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(525, 40);
-            this.Search.TabIndex = 2;
-            this.Search.UseVisualStyleBackColor = true;
             // 
             // TableFromTournamentPage
             // 
@@ -189,22 +180,28 @@ namespace TournamentManager
             // 
             // AddTour
             // 
+            this.AddTour.BackColor = System.Drawing.Color.Gold;
+            this.AddTour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddTour.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddTour.Location = new System.Drawing.Point(860, 627);
             this.AddTour.Name = "AddTour";
-            this.AddTour.Size = new System.Drawing.Size(150, 45);
+            this.AddTour.Size = new System.Drawing.Size(165, 56);
             this.AddTour.TabIndex = 4;
             this.AddTour.Text = "Add Tournament";
-            this.AddTour.UseVisualStyleBackColor = true;
+            this.AddTour.UseVisualStyleBackColor = false;
             this.AddTour.Click += new System.EventHandler(this.Create_tournament);
             // 
             // Pagination
             // 
+            this.Pagination.BackColor = System.Drawing.Color.Gold;
+            this.Pagination.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Pagination.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Pagination.Location = new System.Drawing.Point(934, 937);
             this.Pagination.Name = "Pagination";
             this.Pagination.Size = new System.Drawing.Size(35, 39);
             this.Pagination.TabIndex = 5;
             this.Pagination.Text = "1";
-            this.Pagination.UseVisualStyleBackColor = true;
+            this.Pagination.UseVisualStyleBackColor = false;
             // 
             // LeftPageReturn
             // 
@@ -230,18 +227,22 @@ namespace TournamentManager
             // 
             // Username
             // 
-            this.Username.Location = new System.Drawing.Point(1756, 58);
+            this.Username.BackColor = System.Drawing.Color.Gold;
+            this.Username.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Username.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Username.Location = new System.Drawing.Point(1755, 72);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(119, 46);
             this.Username.TabIndex = 8;
-            this.Username.UseVisualStyleBackColor = true;
+            this.Username.Text = "Account";
+            this.Username.UseVisualStyleBackColor = false;
             this.Username.Click += new System.EventHandler(this.Username_Click);
             // 
             // TournamentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.buttonRightPageForward);
@@ -249,7 +250,6 @@ namespace TournamentManager
             this.Controls.Add(this.Pagination);
             this.Controls.Add(this.AddTour);
             this.Controls.Add(this.TableFromTournamentPage);
-            this.Controls.Add(this.Search);
             this.Controls.Add(this.menuStripTournamentPage);
             this.MainMenuStrip = this.menuStripTournamentPage;
             this.Name = "TournamentPage";
@@ -276,7 +276,6 @@ namespace TournamentManager
         private System.Windows.Forms.ToolStripMenuItem StripMenuItemView;
         private System.Windows.Forms.ToolStripMenuItem themeView;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button Search;
         private System.Windows.Forms.TableLayoutPanel TableFromTournamentPage;
         private System.Windows.Forms.Button AddTour;
         private System.Windows.Forms.Button Pagination;

@@ -38,40 +38,49 @@ namespace TournamentManager
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("Segoe UI Semibold", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelWelcome.Location = new System.Drawing.Point(171, 59);
+            this.labelWelcome.ForeColor = System.Drawing.Color.Gold;
+            this.labelWelcome.Location = new System.Drawing.Point(113, 42);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(485, 42);
+            this.labelWelcome.Size = new System.Drawing.Size(507, 45);
             this.labelWelcome.TabIndex = 0;
             this.labelWelcome.Text = "Welcome in TournamentMenager";
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(238, 235);
+            this.Login.BackColor = System.Drawing.Color.Gold;
+            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.Location = new System.Drawing.Point(207, 176);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(153, 51);
             this.Login.TabIndex = 1;
             this.Login.Text = "Log in";
-            this.Login.UseVisualStyleBackColor = true;
+            this.Login.UseVisualStyleBackColor = false;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // Signup
             // 
-            this.Signup.Location = new System.Drawing.Point(422, 235);
+            this.Signup.BackColor = System.Drawing.Color.Gold;
+            this.Signup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Signup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Signup.Location = new System.Drawing.Point(391, 176);
             this.Signup.Name = "Signup";
             this.Signup.Size = new System.Drawing.Size(153, 51);
             this.Signup.TabIndex = 2;
             this.Signup.Text = "Sign up";
-            this.Signup.UseVisualStyleBackColor = true;
+            this.Signup.UseVisualStyleBackColor = false;
             this.Signup.Click += new System.EventHandler(this.Signup_Click);
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(752, 385);
             this.Controls.Add(this.Signup);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.labelWelcome);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Welcome";
             this.Text = "Welcome";
             this.ResumeLayout(false);
