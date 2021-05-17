@@ -73,6 +73,7 @@
     </Compile>
     <Compile Include="Logic\Championship.cs" />
     <Compile Include="Logic\Cup.cs" />
+    <Compile Include="Logic\DrawTournamentTable.cs" />
     <Compile Include="Logic\Tournament.cs" />
     <Compile Include="Logic\TournamentStorage.cs" />
     <Compile Include="Logic\UserAccountHandler.cs" />
