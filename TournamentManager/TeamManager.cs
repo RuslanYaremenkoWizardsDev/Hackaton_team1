@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TournamentManager
 {
-    public partial class Form1 : Form
+    public partial class TeamManager : Form
     {
-        public Form1()
+        public TeamManager()
         {
             InitializeComponent();
+        }
+
+        private void buttonAddTeam_Click(object sender, EventArgs e)
+        {
+            DataHelper.TeamDataInsert(textBoxName.Text, Convert.ToInt32(textBoxQuantity.Text), Convert.ToInt32(textBoxScore.Text));
         }
     }
 }
