@@ -37,6 +37,8 @@ namespace TournamentManager
             DataHelper.TournamentDataInsert(textBoxName.Text, textBoxDescription.Text, comboBoxType.Text, textBoxPlace.Text,
                 "12/9/23"/*dateTimeStartTournament.Value.Date*/, "10/7/23"/*dateTimeEndRegistration.Value.Date*/, comboBoxLevel.Text,
                 Convert.ToInt32(textBoxCountPlayers.Text), comboBoxScenario.Text, result: 0);
+            
+            this.Close();
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)

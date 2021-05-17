@@ -81,9 +81,13 @@ namespace TournamentManager
 
         private void TournamentPage_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tournamentManagerDataSet.Tournament' table. You can move, or remove it, as needed.
             this.tournamentTableAdapter.Fill(this.tournamentManagerDataSet.Tournament);
 
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            this.tournamentTableAdapter.Fill(this.tournamentManagerDataSet.Tournament);
         }
     }
 }
